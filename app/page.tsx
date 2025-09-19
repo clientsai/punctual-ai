@@ -229,10 +229,6 @@ export default function Home() {
                   Try Free
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
-                <Button variant="outline" size="lg">
-                  <Play className="w-4 h-4 mr-2" />
-                  Watch Demo
-                </Button>
               </div>
             </motion.div>
 
@@ -650,10 +646,6 @@ export default function Home() {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg">
-                <Play className="w-5 h-5 mr-2" />
-                Watch Demo
-              </Button>
               <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg">
                 <ExternalLink className="w-5 h-5 mr-2" />
                 View Pricing

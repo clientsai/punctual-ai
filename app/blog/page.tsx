@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { Calendar, Clock, User, ArrowRight, Search, Filter, Tag, Sparkles, TrendingUp, BookOpen, MessageSquare, Heart, Share2, Download, ExternalLink } from 'lucide-react'
+import { Calendar, Clock, User, Users, ArrowRight, Search, Filter, Tag, Sparkles, TrendingUp, BookOpen, MessageSquare, Heart, Share2, Download, ExternalLink } from 'lucide-react'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'

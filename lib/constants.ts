@@ -63,6 +63,8 @@ export const FOOTER_LINKS = {
     { label: 'Help center', href: '/help' },
     { label: 'FAQ', href: '/faq' },
     { label: 'API docs', href: '/api' },
+    { label: 'Webhooks', href: '/webhooks' },
+    { label: 'Roadmap', href: '/roadmap' },
     { label: 'Status page', href: '/status' },
   ],
   company: [
@@ -75,6 +77,7 @@ export const FOOTER_LINKS = {
     { label: 'Privacy Policy', href: '/privacy' },
     { label: 'Terms of Service', href: '/terms' },
     { label: 'Security', href: '/security' },
+    { label: 'Compliance', href: '/compliance' },
     { label: 'Cookie Policy', href: '/cookies' },
   ],
 }

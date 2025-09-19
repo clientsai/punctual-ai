@@ -55,11 +55,6 @@ export function Hero() {
                 Start free →
               </Button>
             </Link>
-            <Link href="https://app.punctual.ai/demo">
-              <Button size="xl" variant="secondary" className="px-8">
-                View demo
-              </Button>
-            </Link>
           </motion.div>
 
           <motion.div

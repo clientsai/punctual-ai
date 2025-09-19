@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { Calendar, Clock, User, Mail, Phone, Building, MessageSquare, CheckCircle, ArrowRight, Sparkles, Zap, Shield, Globe, Users, Star, Video, PhoneCall, Mail as MailIcon, MapPin, ExternalLink } from 'lucide-react'
@@ -291,7 +292,7 @@ export default function DemoPage() {
                 <CardContent className="p-8">
                   <div className="text-center mb-8">
                     <div className={`w-20 h-20 bg-gradient-to-br ${selectedDemoType?.color} rounded-2xl flex items-center justify-center mx-auto mb-6`}>
-                      <selectedDemoType?.icon className="w-10 h-10 text-white" />
+                      {selectedDemoType?.icon && <selectedDemoType.icon className="w-10 h-10 text-white" />}
                     </div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">{selectedDemoType?.title}</h3>
                     <p className="text-gray-600 mb-4">{selectedDemoType?.description}</p>
