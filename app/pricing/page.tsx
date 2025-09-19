@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import { useState } from 'react'
 import { Check, X, Star, Zap, Shield, Users, Calendar, Clock, ArrowRight, Sparkles, Download, ExternalLink, Heart, Globe, Settings, MessageSquare, Phone, Mail, Crown, Rocket, Target, Award } from 'lucide-react'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
@@ -548,14 +549,18 @@ export default function PricingPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold">
-                Start Free Trial
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold">
-                <MessageSquare className="w-5 h-5 mr-2" />
-                Talk to Sales
-              </Button>
+              <Link href="https://app.punctual.ai/signup">
+                <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold">
+                  Start Free Trial
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </Link>
+              <Link href="https://punctual.ai/contact">
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold">
+                  <MessageSquare className="w-5 h-5 mr-2" />
+                  Talk to Sales
+                </Button>
+              </Link>
             </div>
           </motion.div>
         </div>

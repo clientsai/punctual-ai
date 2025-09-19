@@ -225,10 +225,12 @@ export default function Home() {
               </div>
               
               <div className="flex items-center gap-4">
-                <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-dark">
-                  Try Free
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
+                <Link href="https://app.punctual.ai/signup">
+                  <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-dark">
+                    Try Free
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Button>
+                </Link>
               </div>
             </motion.div>
 
@@ -635,10 +637,12 @@ export default function Home() {
                   className="flex-1 px-6 py-4 text-lg rounded-xl text-gray-900 placeholder-gray-500 border-0 focus:ring-2 focus:ring-white/50"
                   required
                 />
-                <Button type="submit" size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                  Get Started Free
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
+                <Link href="https://app.punctual.ai/signup">
+                  <Button type="submit" size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
+                    Get Started Free
+                    <ArrowRight className="w-5 h-5 ml-2" />
+                  </Button>
+                </Link>
               </form>
               <p className="text-sm mt-6 opacity-80">
                 Free forever for individuals • No credit card required • Setup in 2 minutes

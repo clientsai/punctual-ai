@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import { Calendar, Plus, Bug, Zap, Shield, Star, ArrowRight } from 'lucide-react'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -426,12 +427,16 @@ export default function ChangelogPage() {
               Experience all the new features and improvements we've been working on
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-6 py-3 bg-white text-primary rounded-lg hover:bg-gray-100 transition-colors">
-                Start Free Trial
-              </button>
-              <button className="px-6 py-3 border border-white text-white rounded-lg hover:bg-white hover:text-primary transition-colors">
-                Schedule Demo
-              </button>
+              <Link href="https://app.punctual.ai/signup">
+                <button className="px-6 py-3 bg-white text-primary rounded-lg hover:bg-gray-100 transition-colors">
+                  Start Free Trial
+                </button>
+              </Link>
+              <Link href="https://punctual.ai/demo">
+                <button className="px-6 py-3 border border-white text-white rounded-lg hover:bg-white hover:text-primary transition-colors">
+                  Schedule Demo
+                </button>
+              </Link>
             </div>
           </motion.div>
         </div>
