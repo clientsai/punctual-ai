@@ -50,7 +50,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Link href="https://punctual.ai/register">
+            <Link href="https://app.punctual.ai/register">
               <Button size="xl" className="px-8">
                 Start free →
               </Button>

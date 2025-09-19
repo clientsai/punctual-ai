@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Punctual.ai - Modern Scheduling for Teams",
     description: "Eliminate back-and-forth emails. Schedule meetings instantly.",
-    url: "https://punctual.ai",
+    url: "https://app.punctual.ai",
     siteName: "Punctual",
     images: [
       {

@@ -225,7 +225,7 @@ export default function Home() {
               </div>
               
               <div className="flex items-center gap-4">
-                <Link href="https://punctual.ai/register">
+                <Link href="https://app.punctual.ai/register">
                   <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-dark">
                     Try Free
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -626,7 +626,7 @@ export default function Home() {
             
             <div className="max-w-2xl mx-auto mb-12">
               <form
-                action="https://punctual.ai/register"
+                action="https://app.punctual.ai/register"
                 method="GET"
                 className="flex flex-col sm:flex-row gap-4"
               >
@@ -637,7 +637,7 @@ export default function Home() {
                   className="flex-1 px-6 py-4 text-lg rounded-xl text-gray-900 placeholder-gray-500 border-0 focus:ring-2 focus:ring-white/50"
                   required
                 />
-                <Link href="https://punctual.ai/register">
+                <Link href="https://app.punctual.ai/register">
                   <Button type="submit" size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
                     Get Started Free
                     <ArrowRight className="w-5 h-5 ml-2" />
