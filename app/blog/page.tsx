@@ -309,7 +309,7 @@ export default function BlogPage() {
                     </div>
                     
                     <div className="flex items-center justify-between">
-                      <Link href={`/blog/${post.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')}`}>
+                      <Link href={post.title === 'The Psychology of Meeting Scheduling' ? '/blog/psychology-meeting-scheduling' : `/blog/${post.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')}`}>
                         <Button variant="outline" size="sm">
                           Read More
                           <ArrowRight className="w-4 h-4 ml-2" />
