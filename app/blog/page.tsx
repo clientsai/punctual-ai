@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { Calendar, Clock, User, Users, ArrowRight, Search, Filter, Tag, Sparkles, TrendingUp, BookOpen, MessageSquare, Heart, Share2, Download, ExternalLink } from 'lucide-react'
+import { Calendar, Clock, User, Users, ArrowRight, Tag, Sparkles, TrendingUp, BookOpen, MessageSquare, Heart, Share2, Download, ExternalLink } from 'lucide-react'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -89,14 +89,6 @@ const blogPosts = [
   },
 ]
 
-const categories = [
-  { name: 'All', count: 24, active: true },
-  { name: 'Product', count: 8, active: false },
-  { name: 'Productivity', count: 6, active: false },
-  { name: 'Tutorial', count: 4, active: false },
-  { name: 'Enterprise', count: 3, active: false },
-  { name: 'Technology', count: 3, active: false },
-]
 
 const popularTags = [
   'Scheduling', 'Productivity', 'AI', 'Remote Work', 'Calendar', 'Meetings', 'Automation', 'Time Management'
@@ -154,38 +146,6 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Search and Filters */}
-      <section className="py-12 bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row gap-6 items-center justify-between">
-            <div className="flex-1 max-w-md">
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-                <Input
-                  placeholder="Search articles..."
-                  className="pl-10 pr-4 py-3 w-full"
-                />
-              </div>
-            </div>
-            
-            <div className="flex flex-wrap gap-2">
-              {categories.map((category) => (
-                <Button
-                  key={category.name}
-                  variant={category.active ? "default" : "outline"}
-                  size="sm"
-                  className="px-4 py-2"
-                >
-                  {category.name}
-                  <Badge variant="secondary" className="ml-2 text-xs">
-                    {category.count}
-                  </Badge>
-                </Button>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Featured Post */}
       <section className="py-16 bg-gradient-to-br from-gray-50 to-white">
