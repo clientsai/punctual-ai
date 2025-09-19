@@ -2,7 +2,8 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { Calendar, Clock, User, Users, ArrowRight, Tag, Sparkles, TrendingUp, BookOpen, MessageSquare, Heart, Share2, Download, ExternalLink } from 'lucide-react'
+import { useState } from 'react'
+import { Calendar, Clock, User, Users, ArrowRight, Tag, Sparkles, TrendingUp, BookOpen, MessageSquare, Heart, Share2, Download, ExternalLink, CheckCircle, AlertCircle, Loader2 } from 'lucide-react'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -102,6 +103,50 @@ const newsletter = {
 }
 
 export default function BlogPage() {
+  const [email, setEmail] = useState('')
+  const [isSubscribing, setIsSubscribing] = useState(false)
+  const [subscriptionStatus, setSubscriptionStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  const [errorMessage, setErrorMessage] = useState('')
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault()
+    
+    if (!email || !email.includes('@')) {
+      setSubscriptionStatus('error')
+      setErrorMessage('Please enter a valid email address')
+      return
+    }
+
+    setIsSubscribing(true)
+    setSubscriptionStatus('idle')
+    setErrorMessage('')
+
+    try {
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        setSubscriptionStatus('success')
+        setEmail('')
+      } else {
+        setSubscriptionStatus('error')
+        setErrorMessage(data.error || 'Failed to subscribe. Please try again.')
+      }
+    } catch (error) {
+      setSubscriptionStatus('error')
+      setErrorMessage('Network error. Please check your connection and try again.')
+    } finally {
+      setIsSubscribing(false)
+    }
+  }
+
   return (
     <div>
       {/* Hero Section */}
@@ -309,7 +354,11 @@ export default function BlogPage() {
                     </div>
                     
                     <div className="flex items-center justify-between">
-                      <Link href={post.title === 'The Psychology of Meeting Scheduling' ? '/blog/psychology-meeting-scheduling' : `/blog/${post.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')}`}>
+                      <Link href={
+                        post.title === 'The Psychology of Meeting Scheduling' ? '/blog/psychology-meeting-scheduling' :
+                        post.title === '10 Productivity Hacks for Remote Teams' ? '/blog/10-productivity-hacks-remote-teams' :
+                        `/blog/${post.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')}`
+                      }>
                         <Button variant="outline" size="sm">
                           Read More
                           <ArrowRight className="w-4 h-4 ml-2" />
@@ -347,16 +396,61 @@ export default function BlogPage() {
               {newsletter.description}
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto mb-6">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 text-gray-900"
-              />
-              <Button className="bg-white text-primary hover:bg-gray-100 px-6 py-3">
-                Subscribe
-              </Button>
-            </div>
+            <form onSubmit={handleSubscribe} className="max-w-md mx-auto mb-6">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Input
+                  type="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="flex-1 px-4 py-3 text-gray-900"
+                  disabled={isSubscribing}
+                  required
+                />
+                <Button 
+                  type="submit" 
+                  className="bg-white text-primary hover:bg-gray-100 px-6 py-3"
+                  disabled={isSubscribing}
+                >
+                  {isSubscribing ? (
+                    <>
+                      <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                      Subscribing...
+                    </>
+                  ) : (
+                    'Subscribe'
+                  )}
+                </Button>
+              </div>
+              
+              {/* Success Message */}
+              {subscriptionStatus === 'success' && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="mt-4 p-3 bg-green-100 border border-green-200 rounded-lg flex items-center gap-2"
+                >
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <span className="text-green-800 text-sm font-medium">
+                    Successfully subscribed! Check your email for confirmation.
+                  </span>
+                </motion.div>
+              )}
+              
+              {/* Error Message */}
+              {subscriptionStatus === 'error' && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="mt-4 p-3 bg-red-100 border border-red-200 rounded-lg flex items-center gap-2"
+                >
+                  <AlertCircle className="w-5 h-5 text-red-600" />
+                  <span className="text-red-800 text-sm font-medium">
+                    {errorMessage}
+                  </span>
+                </motion.div>
+              )}
+            </form>
             
             <div className="flex items-center justify-center gap-6 text-sm opacity-80">
               <div className="flex items-center gap-2">
