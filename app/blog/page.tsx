@@ -132,16 +132,6 @@ export default function BlogPage() {
               and time management from our team of experts.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-dark">
-                <BookOpen className="w-4 h-4 mr-2" />
-                Browse Articles
-              </Button>
-              <Button variant="outline" size="lg">
-                <MessageSquare className="w-4 h-4 mr-2" />
-                Join Discussion
-              </Button>
-            </div>
           </motion.div>
         </div>
       </section>

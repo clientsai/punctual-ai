@@ -15,7 +15,7 @@ export function Footer() {
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">P</span>
               </div>
-              <span className="text-xl font-bold">Punctual</span>
+              <span className="text-xl font-bold">Punctual.ai</span>
             </div>
             <p className="text-gray-400 text-sm">
               Modern scheduling for teams. Eliminate back-and-forth emails.

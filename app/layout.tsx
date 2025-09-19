@@ -5,8 +5,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://punctual-ai-website.vercel.app'),
-  title: "Punctual - Modern Scheduling for Teams",
-  description: "Eliminate back-and-forth emails with Punctual. Schedule meetings instantly with our modern scheduling platform trusted by 50,000+ professionals.",
+  title: "Punctual.ai - Modern Scheduling for Teams",
+  description: "Eliminate back-and-forth emails with Punctual.ai. Schedule meetings instantly with our modern scheduling platform trusted by 50,000+ professionals.",
   keywords: "scheduling, calendar, meetings, appointment booking, team scheduling",
   authors: [{ name: "Punctual.AI" }],
   icons: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     apple: { url: "/apple-touch-icon.png", sizes: "180x180" },
   },
   openGraph: {
-    title: "Punctual - Modern Scheduling for Teams",
+    title: "Punctual.ai - Modern Scheduling for Teams",
     description: "Eliminate back-and-forth emails. Schedule meetings instantly.",
     url: "https://punctual.ai",
     siteName: "Punctual",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Punctual - Modern Scheduling for Teams",
+    title: "Punctual.ai - Modern Scheduling for Teams",
     description: "Eliminate back-and-forth emails. Schedule meetings instantly.",
     images: ["/og-image.png"],
   },
