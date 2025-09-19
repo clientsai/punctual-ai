@@ -385,7 +385,7 @@ export default function BlogPostPage() {
               Join thousands of teams already using AI-powered scheduling to transform their productivity
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="https://app.punctual.ai/signup">
+              <Link href="https://punctual.ai/register">
                 <Button size="lg" className="bg-white text-primary hover:bg-gray-100">
                   <Calendar className="w-5 h-5 mr-2" />
                   Try Punctual Free

@@ -222,7 +222,7 @@ export default function PricingPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="https://app.punctual.ai/signup">
+              <Link href="https://punctual.ai/register">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-dark">
                   <Rocket className="w-4 h-4 mr-2" />
                   Start Free Trial
@@ -551,7 +551,7 @@ export default function PricingPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Link href="https://app.punctual.ai/signup">
+              <Link href="https://punctual.ai/register">
                 <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold">
                   Start Free Trial
                   <ArrowRight className="w-5 h-5 ml-2" />

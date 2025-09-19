@@ -64,10 +64,10 @@ export function Navigation() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link href="https://app.punctual.ai" className="text-gray-700 hover:text-primary transition-colors">
+            <Link href="https://punctual.ai" className="text-gray-700 hover:text-primary transition-colors">
               Sign in
             </Link>
-            <Link href="https://app.punctual.ai/create">
+            <Link href="https://punctual.ai/register">
               <Button size="sm">Get started</Button>
             </Link>
           </div>
@@ -126,10 +126,10 @@ export function Navigation() {
               </div>
             ))}
             <div className="pt-4 space-y-2">
-              <Link href="https://app.punctual.ai" className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-lg">
+              <Link href="https://punctual.ai/login" className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-lg">
                 Sign in
               </Link>
-              <Link href="https://app.punctual.ai/create" className="block">
+              <Link href="https://punctual.ai/register" className="block">
                 <Button className="w-full">Get started</Button>
               </Link>
             </div>

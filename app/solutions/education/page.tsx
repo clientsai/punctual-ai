@@ -115,7 +115,7 @@ export default function EducationSolutionPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="https://app.punctual.ai/signup">
+              <Link href="https://punctual.ai/register">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-dark">
                   <Rocket className="w-5 h-5 mr-2" />
                   Start Free Trial
@@ -271,7 +271,7 @@ export default function EducationSolutionPage() {
               Join thousands of educational institutions already using Punctual to streamline their operations
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="https://app.punctual.ai/signup">
+              <Link href="https://punctual.ai/register">
                 <Button size="lg" className="bg-white text-primary hover:bg-gray-100">
                   <Calendar className="w-5 h-5 mr-2" />
                   Start Free Trial
