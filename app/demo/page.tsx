@@ -89,21 +89,21 @@ const benefits = [
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
+    name: 'Operations Team',
     company: 'TechCorp Inc.',
     role: 'Operations Manager',
     content: 'The demo was incredibly helpful. We were able to see exactly how Punctual would fit into our workflow and got all our questions answered.',
     rating: 5,
   },
   {
-    name: 'Michael Chen',
+    name: 'Executive Team',
     company: 'StartupXYZ',
     role: 'CEO',
     content: 'Our sales team loved the personalized demo. It showed us features we didn\'t even know existed and saved us weeks of trial and error.',
     rating: 5,
   },
   {
-    name: 'Emily Rodriguez',
+    name: 'IT Team',
     company: 'Global Solutions',
     role: 'IT Director',
     content: 'The technical deep dive was exactly what we needed. We could see how it would integrate with our existing systems seamlessly.',

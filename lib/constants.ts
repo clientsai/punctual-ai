@@ -93,31 +93,31 @@ export const TRUST_LOGOS = [
 export const TESTIMONIALS = [
   {
     quote: 'Cut our scheduling time by 70%. Game-changer for our sales team.',
-    author: 'Sarah Chen',
+    author: 'Sales Team Lead',
     role: 'Head of Sales',
     company: 'TechCorp',
-    avatar: '/images/avatars/sarah.jpg',
+    avatar: '/images/avatars/sales-lead.jpg',
   },
   {
     quote: "Punctual's team features transformed how we coordinate client meetings.",
-    author: 'Michael Rodriguez',
+    author: 'Executive Team',
     role: 'CEO',
     company: 'ConsultPro',
-    avatar: '/images/avatars/michael.jpg',
+    avatar: '/images/avatars/executive.jpg',
   },
   {
     quote: 'Finally, a scheduling tool that respects everyone\'s time zones perfectly.',
-    author: 'Emma Watson',
+    author: 'Product Team',
     role: 'Product Manager',
     company: 'GlobalSync',
-    avatar: '/images/avatars/emma.jpg',
+    avatar: '/images/avatars/product-team.jpg',
   },
   {
     quote: 'The integration with our existing tools was seamless. Highly recommend!',
-    author: 'David Park',
+    author: 'Operations Team',
     role: 'Operations Director',
     company: 'ScaleUp',
-    avatar: '/images/avatars/david.jpg',
+    avatar: '/images/avatars/operations.jpg',
   },
 ]
 

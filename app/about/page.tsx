@@ -2,7 +2,8 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Users, Target, Zap, Heart, Award, Globe, TrendingUp, Clock, Sparkles, ArrowRight, Play, Download, ExternalLink, Star, CheckCircle, Shield, Rocket, BarChart3 } from 'lucide-react'
+import Link from 'next/link'
+import { Users, Target, Zap, Heart, Award, Globe, TrendingUp, Clock, Sparkles, ArrowRight, Play, Download, ExternalLink, Star, CheckCircle, Shield, Rocket, BarChart3, BookOpen, Eye, MessageSquare } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -42,54 +43,42 @@ const values = [
   },
 ]
 
-const team = [
-  { 
-    name: 'Sarah Chen', 
-    role: 'CEO & Co-founder', 
-    image: '/images/team/sarah.jpg',
-    bio: 'Former product manager at Google with 10+ years building user-focused products.',
-    linkedin: 'sarah-chen',
-    twitter: 'sarahchen',
+const companyValues = [
+  {
+    title: 'Innovation First',
+    description: 'We constantly push the boundaries of what\'s possible in scheduling technology, always looking for new ways to solve old problems.',
+    icon: Rocket,
+    color: 'from-blue-500 to-blue-600',
   },
-  { 
-    name: 'Michael Rodriguez', 
-    role: 'CTO & Co-founder', 
-    image: '/images/team/michael.jpg',
-    bio: 'Ex-Microsoft engineer passionate about scalable systems and developer experience.',
-    linkedin: 'michael-rodriguez',
-    twitter: 'mrodriguez',
+  {
+    title: 'User-Centric Design',
+    description: 'Every feature we build starts with understanding our users\' needs and ends with creating intuitive, delightful experiences.',
+    icon: Users,
+    color: 'from-green-500 to-green-600',
   },
-  { 
-    name: 'Emma Watson', 
-    role: 'Head of Product', 
-    image: '/images/team/emma.jpg',
-    bio: 'Product strategist with expertise in B2B SaaS and user experience design.',
-    linkedin: 'emma-watson',
-    twitter: 'emmawatson',
+  {
+    title: 'Reliability & Trust',
+    description: 'We understand that scheduling is mission-critical for our users, so we build with reliability, security, and trust at the core.',
+    icon: Shield,
+    color: 'from-purple-500 to-purple-600',
   },
-  { 
-    name: 'David Park', 
-    role: 'Head of Engineering', 
-    image: '/images/team/david.jpg',
-    bio: 'Full-stack engineer focused on building reliable, performant systems.',
-    linkedin: 'david-park',
-    twitter: 'davidpark',
+  {
+    title: 'Continuous Learning',
+    description: 'We stay ahead of the curve by continuously learning, adapting, and evolving our product to meet changing needs.',
+    icon: BookOpen,
+    color: 'from-orange-500 to-orange-600',
   },
-  { 
-    name: 'Lisa Thompson', 
-    role: 'Head of Design', 
-    image: '/images/team/lisa.jpg',
-    bio: 'Design leader with a passion for creating beautiful, functional interfaces.',
-    linkedin: 'lisa-thompson',
-    twitter: 'lisathompson',
+  {
+    title: 'Collaboration',
+    description: 'We believe the best solutions come from diverse teams working together towards a common goal.',
+    icon: Globe,
+    color: 'from-teal-500 to-teal-600',
   },
-  { 
-    name: 'James Wilson', 
-    role: 'Head of Sales', 
-    image: '/images/team/james.jpg',
-    bio: 'Sales veteran with deep experience in enterprise software and customer success.',
-    linkedin: 'james-wilson',
-    twitter: 'jameswilson',
+  {
+    title: 'Transparency',
+    description: 'We maintain open communication with our users, partners, and team members, building trust through transparency.',
+    icon: Eye,
+    color: 'from-pink-500 to-pink-600',
   },
 ]
 
@@ -97,7 +86,7 @@ const milestones = [
   {
     year: '2021',
     title: 'Company Founded',
-    description: 'Sarah and Michael founded Punctual after experiencing scheduling frustrations firsthand.',
+    description: 'Punctual was founded by our team after experiencing scheduling frustrations firsthand.',
     icon: Rocket,
     color: 'from-blue-500 to-blue-600',
   },
@@ -240,7 +229,7 @@ export default function AboutPage() {
             >
               <div className="prose prose-lg text-gray-600 max-w-none">
                 <p className="text-lg leading-relaxed mb-6">
-                  Punctual was born from frustration. Our founders, Sarah and Michael, were spending 
+                  Punctual was born from frustration. Our founding team was spending 
                   hours every week just scheduling meetings. Email chains with "How about Tuesday?" 
                   followed by "Actually, can we do Wednesday?" were eating up valuable time that 
                   could be spent on actual work.
@@ -375,17 +364,17 @@ export default function AboutPage() {
             className="text-center mb-16"
           >
             <h2 className="text-5xl font-bold text-gray-900 mb-6">
-              Meet Our <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Amazing Team</span>
+              Our <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Core Values</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              The passionate people making scheduling better, one feature at a time
+              The principles that guide everything we do at Punctual
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {team.map((member, index) => (
+            {companyValues.map((value, index) => (
               <motion.div
-                key={member.name}
+                key={value.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -394,26 +383,12 @@ export default function AboutPage() {
               >
                 <Card className="h-full hover:shadow-2xl transition-all duration-500 group-hover:scale-105 border-0 shadow-lg">
                   <CardContent className="p-8 text-center">
-                    <div className="w-24 h-24 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                      <span className="text-2xl font-bold text-white">
-                        {member.name.split(' ').map(n => n[0]).join('')}
-                      </span>
+                    <div className={`w-20 h-20 bg-gradient-to-r ${value.color} rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                      <value.icon className="w-10 h-10 text-white" />
                     </div>
                     
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{member.name}</h3>
-                    <p className="text-lg text-primary font-semibold mb-4">{member.role}</p>
-                    <p className="text-gray-600 mb-6 leading-relaxed">{member.bio}</p>
-                    
-                    <div className="flex justify-center gap-3">
-                      <Button variant="outline" size="sm" className="group-hover:bg-primary group-hover:text-white transition-colors">
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        LinkedIn
-                      </Button>
-                      <Button variant="outline" size="sm" className="group-hover:bg-primary group-hover:text-white transition-colors">
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        Twitter
-                      </Button>
-                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">{value.title}</h3>
+                    <p className="text-gray-600 leading-relaxed">{value.description}</p>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -595,14 +570,18 @@ export default function AboutPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold">
-                Start Free Trial
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold">
-                <Download className="w-5 h-5 mr-2" />
-                Download Case Study
-              </Button>
+              <Link href="https://app.punctual.ai/signup">
+                <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold">
+                  Start Free Trial
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </Link>
+              <Link href="https://punctual.ai/contact">
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold">
+                  <MessageSquare className="w-5 h-5 mr-2" />
+                  Contact Us
+                </Button>
+              </Link>
             </div>
           </motion.div>
         </div>

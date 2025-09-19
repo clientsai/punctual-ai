@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import { Calendar, Clock, Users, Globe, Shield, Zap, Settings, MessageSquare, ArrowRight, Sparkles, CheckCircle, Star, Heart, Download, ExternalLink, Play, Target, Award, Rocket, Lock, Eye, Database } from 'lucide-react'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -238,7 +239,7 @@ const useCases = [
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
+    name: 'Sales Team',
     role: 'Sales Director',
     company: 'TechCorp',
     quote: 'Punctual has revolutionized how we manage our sales meetings. The team scheduling features are incredible.',
@@ -246,7 +247,7 @@ const testimonials = [
     feature: 'Team Scheduling',
   },
   {
-    name: 'Michael Chen',
+    name: 'Executive Team',
     role: 'CEO',
     company: 'StartupXYZ',
     quote: 'The integrations are seamless. We can now schedule meetings directly from our CRM.',
@@ -254,7 +255,7 @@ const testimonials = [
     feature: 'CRM Integration',
   },
   {
-    name: 'Emily Davis',
+    name: 'HR Team',
     role: 'HR Manager',
     company: 'GlobalCorp',
     quote: 'Managing interviews across multiple time zones is now effortless with Punctual.',
@@ -295,10 +296,12 @@ export default function FeaturesPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-dark">
-                <Rocket className="w-4 h-4 mr-2" />
-                Start Free Trial
-              </Button>
+              <Link href="https://app.punctual.ai/signup">
+                <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-dark">
+                  <Rocket className="w-4 h-4 mr-2" />
+                  Start Free Trial
+                </Button>
+              </Link>
               <Button variant="outline" size="lg">
                 <Play className="w-4 h-4 mr-2" />
                 Watch Demo

@@ -304,7 +304,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="space-y-2">
-                      {['Sarah Chen', 'Mike Johnson', 'Emily Davis'].map((name, index) => (
+                      {['Team Member 1', 'Team Member 2', 'Team Member 3'].map((name, index) => (
                         <div key={name} className="flex items-center justify-between p-3 bg-white rounded-lg shadow-sm">
                           <div className="flex items-center gap-3">
                             <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center text-white text-sm font-semibold">

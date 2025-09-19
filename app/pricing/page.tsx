@@ -147,7 +147,7 @@ const faqs = [
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
+    name: 'Marketing Team',
     role: 'Marketing Director',
     company: 'TechCorp',
     quote: 'Punctual has transformed how we manage our team\'s schedule. The Pro plan gives us everything we need.',
@@ -155,7 +155,7 @@ const testimonials = [
     plan: 'Pro',
   },
   {
-    name: 'Michael Chen',
+    name: 'Executive Team',
     role: 'CEO',
     company: 'StartupXYZ',
     quote: 'The Enterprise plan was perfect for our growing company. The custom integrations saved us months of development.',
@@ -163,7 +163,7 @@ const testimonials = [
     plan: 'Enterprise',
   },
   {
-    name: 'Emily Davis',
+    name: 'Freelance Professional',
     role: 'Freelancer',
     company: 'Independent',
     quote: 'The Free plan is perfect for my needs. I can schedule with clients without any hassle.',
@@ -222,10 +222,12 @@ export default function PricingPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-dark">
-                <Rocket className="w-4 h-4 mr-2" />
-                Start Free Trial
-              </Button>
+              <Link href="https://app.punctual.ai/signup">
+                <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-dark">
+                  <Rocket className="w-4 h-4 mr-2" />
+                  Start Free Trial
+                </Button>
+              </Link>
               <Button variant="outline" size="lg">
                 <MessageSquare className="w-4 h-4 mr-2" />
                 Talk to Sales
