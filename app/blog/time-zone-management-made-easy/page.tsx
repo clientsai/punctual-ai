@@ -169,7 +169,7 @@ export default function BlogPostPage() {
             <div className="flex items-center gap-6 text-sm text-gray-500">
               <div className="flex items-center gap-2">
                 <Users className="w-4 h-4" />
-                <span>Enclose.ai Team</span>
+                <span>Punctual.ai Team</span>
               </div>
               <div className="flex items-center gap-2">
                 <Calendar className="w-4 h-4" />

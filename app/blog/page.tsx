@@ -11,13 +11,11 @@ import { Input } from '@/components/ui/input'
 const featuredPost = {
   title: 'The Future of Scheduling: How AI is Revolutionizing Time Management',
   excerpt: 'Discover how artificial intelligence is transforming the way we manage our time and schedule meetings, making productivity more efficient than ever before.',
-  author: 'Sarah Chen',
-  authorRole: 'CEO & Co-founder',
-  authorImage: '/images/team/sarah.jpg',
+  author: 'Punctual.ai Team',
+  authorRole: 'Product Team',
   publishedAt: '2024-12-15',
   readTime: '8 min read',
   category: 'Product',
-  image: '/images/blog/ai-scheduling.jpg',
   tags: ['AI', 'Productivity', 'Scheduling', 'Technology'],
   content: 'In today\'s fast-paced world, managing time effectively has become more crucial than ever. Traditional scheduling methods are no longer sufficient to handle the complexity of modern work environments. This is where artificial intelligence steps in, offering revolutionary solutions that are transforming how we approach time management...',
 }
@@ -27,11 +25,10 @@ const blogPosts = [
     id: 1,
     title: '10 Productivity Hacks for Remote Teams',
     excerpt: 'Learn proven strategies to boost productivity and collaboration in remote work environments.',
-    author: 'Enclose.ai Team',
+    author: 'Punctual.ai Team',
     publishedAt: '2024-12-10',
     readTime: '6 min read',
     category: 'Productivity',
-    image: '/images/blog/remote-productivity.jpg',
     tags: ['Remote Work', 'Productivity', 'Team Management'],
     featured: true,
   },
@@ -39,11 +36,10 @@ const blogPosts = [
     id: 2,
     title: 'Calendar Integration Best Practices',
     excerpt: 'Master the art of calendar integration with these expert tips and strategies.',
-    author: 'Enclose.ai Team',
+    author: 'Punctual.ai Team',
     publishedAt: '2024-12-08',
     readTime: '5 min read',
     category: 'Tutorial',
-    image: '/images/blog/calendar-integration.jpg',
     tags: ['Calendar', 'Integration', 'Tutorial'],
     featured: false,
   },
@@ -51,11 +47,10 @@ const blogPosts = [
     id: 3,
     title: 'The Psychology of Meeting Scheduling',
     excerpt: 'Understanding the psychological factors that influence effective meeting scheduling.',
-    author: 'Enclose.ai Team',
+    author: 'Punctual.ai Team',
     publishedAt: '2024-12-05',
     readTime: '7 min read',
     category: 'Psychology',
-    image: '/images/blog/meeting-psychology.jpg',
     tags: ['Psychology', 'Meetings', 'Behavior'],
     featured: false,
   },
@@ -63,11 +58,10 @@ const blogPosts = [
     id: 4,
     title: 'Enterprise Scheduling Solutions',
     excerpt: 'How large organizations can implement scalable scheduling solutions.',
-    author: 'Enclose.ai Team',
+    author: 'Punctual.ai Team',
     publishedAt: '2024-12-03',
     readTime: '9 min read',
     category: 'Enterprise',
-    image: '/images/blog/enterprise-scheduling.jpg',
     tags: ['Enterprise', 'Scalability', 'Solutions'],
     featured: true,
   },
@@ -75,11 +69,10 @@ const blogPosts = [
     id: 5,
     title: 'Time Zone Management Made Easy',
     excerpt: 'Navigate global teams and time zones with these practical strategies.',
-    author: 'Enclose.ai Team',
+    author: 'Punctual.ai Team',
     publishedAt: '2024-12-01',
     readTime: '4 min read',
     category: 'Global',
-    image: '/images/blog/time-zones.jpg',
     tags: ['Time Zones', 'Global Teams', 'Management'],
     featured: false,
   },
@@ -87,11 +80,10 @@ const blogPosts = [
     id: 6,
     title: 'Automation in Scheduling: What\'s Next?',
     excerpt: 'Explore the latest trends in scheduling automation and what the future holds.',
-    author: 'Enclose.ai Team',
+    author: 'Punctual.ai Team',
     publishedAt: '2024-11-28',
     readTime: '6 min read',
     category: 'Technology',
-    image: '/images/blog/automation.jpg',
     tags: ['Automation', 'Technology', 'Future'],
     featured: false,
   },
@@ -221,17 +213,16 @@ export default function BlogPage() {
           >
             <Card className="overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 group">
               <div className="grid lg:grid-cols-2 gap-0">
-                <div className="relative h-64 lg:h-auto">
-                  <img
-                    src={featuredPost.image}
-                    alt={featuredPost.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                  <div className="absolute top-4 left-4">
-                    <Badge className="bg-white text-gray-900">
+                <div className="relative h-64 lg:h-auto bg-gradient-to-br from-primary via-primary-dark to-accent flex items-center justify-center">
+                  <div className="text-center text-white p-8">
+                    <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <BookOpen className="w-10 h-10 text-white" />
+                    </div>
+                    <Badge className="bg-white text-gray-900 mb-4">
                       {featuredPost.category}
                     </Badge>
+                    <h3 className="text-2xl font-bold mb-2">{featuredPost.title}</h3>
+                    <p className="text-white/90 text-sm">{featuredPost.excerpt}</p>
                   </div>
                 </div>
                 
@@ -319,20 +310,20 @@ export default function BlogPage() {
                 className="group"
               >
                 <Card className="h-full shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105">
-                  <div className="relative overflow-hidden">
-                    <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    {post.featured && (
-                      <Badge className="absolute top-4 left-4 bg-primary text-white">
-                        Featured
+                  <div className="relative overflow-hidden h-48 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center">
+                    <div className="text-center p-6">
+                      <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <BookOpen className="w-8 h-8 text-primary" />
+                      </div>
+                      {post.featured && (
+                        <Badge className="bg-primary text-white mb-2">
+                          Featured
+                        </Badge>
+                      )}
+                      <Badge className="bg-white text-gray-900 border border-gray-200">
+                        {post.category}
                       </Badge>
-                    )}
-                    <Badge className="absolute top-4 right-4 bg-white text-gray-900">
-                      {post.category}
-                    </Badge>
+                    </div>
                   </div>
                   
                   <CardContent className="p-6">
