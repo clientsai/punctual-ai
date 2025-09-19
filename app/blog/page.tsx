@@ -27,7 +27,7 @@ const blogPosts = [
     id: 1,
     title: '10 Productivity Hacks for Remote Teams',
     excerpt: 'Learn proven strategies to boost productivity and collaboration in remote work environments.',
-    author: 'Michael Rodriguez',
+    author: 'Enclose.ai Team',
     publishedAt: '2024-12-10',
     readTime: '6 min read',
     category: 'Productivity',
@@ -39,7 +39,7 @@ const blogPosts = [
     id: 2,
     title: 'Calendar Integration Best Practices',
     excerpt: 'Master the art of calendar integration with these expert tips and strategies.',
-    author: 'Emma Watson',
+    author: 'Enclose.ai Team',
     publishedAt: '2024-12-08',
     readTime: '5 min read',
     category: 'Tutorial',
@@ -51,7 +51,7 @@ const blogPosts = [
     id: 3,
     title: 'The Psychology of Meeting Scheduling',
     excerpt: 'Understanding the psychological factors that influence effective meeting scheduling.',
-    author: 'David Park',
+    author: 'Enclose.ai Team',
     publishedAt: '2024-12-05',
     readTime: '7 min read',
     category: 'Psychology',
@@ -63,7 +63,7 @@ const blogPosts = [
     id: 4,
     title: 'Enterprise Scheduling Solutions',
     excerpt: 'How large organizations can implement scalable scheduling solutions.',
-    author: 'Lisa Thompson',
+    author: 'Enclose.ai Team',
     publishedAt: '2024-12-03',
     readTime: '9 min read',
     category: 'Enterprise',
@@ -75,7 +75,7 @@ const blogPosts = [
     id: 5,
     title: 'Time Zone Management Made Easy',
     excerpt: 'Navigate global teams and time zones with these practical strategies.',
-    author: 'James Wilson',
+    author: 'Enclose.ai Team',
     publishedAt: '2024-12-01',
     readTime: '4 min read',
     category: 'Global',
@@ -87,7 +87,7 @@ const blogPosts = [
     id: 6,
     title: 'Automation in Scheduling: What\'s Next?',
     excerpt: 'Explore the latest trends in scheduling automation and what the future holds.',
-    author: 'Sarah Chen',
+    author: 'Enclose.ai Team',
     publishedAt: '2024-11-28',
     readTime: '6 min read',
     category: 'Technology',
@@ -269,10 +269,12 @@ export default function BlogPage() {
                   </div>
                   
                   <div className="flex items-center justify-between">
-                    <Button className="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-dark">
-                      Read Article
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </Button>
+                    <Link href={`/blog/${featuredPost.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')}`}>
+                      <Button className="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-dark">
+                        Read Article
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </Button>
+                    </Link>
                     
                     <div className="flex items-center gap-4 text-gray-500">
                       <button className="flex items-center gap-1 hover:text-red-500 transition-colors">
@@ -366,10 +368,12 @@ export default function BlogPage() {
                     </div>
                     
                     <div className="flex items-center justify-between">
-                      <Button variant="outline" size="sm">
-                        Read More
-                        <ArrowRight className="w-4 h-4 ml-2" />
-                      </Button>
+                      <Link href={`/blog/${post.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')}`}>
+                        <Button variant="outline" size="sm">
+                          Read More
+                          <ArrowRight className="w-4 h-4 ml-2" />
+                        </Button>
+                      </Link>
                       
                       <div className="flex items-center gap-3 text-gray-500">
                         <button className="hover:text-red-500 transition-colors">
