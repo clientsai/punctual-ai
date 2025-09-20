@@ -15,6 +15,7 @@ export const metadata: Metadata = {
       { url: "/favicon.ico", sizes: "any" }
     ],
     apple: { url: "/apple-touch-icon.png", sizes: "180x180" },
+    shortcut: { url: "/favicon.svg" },
   },
   openGraph: {
     title: "Punctual.ai - Modern Scheduling for Teams",
