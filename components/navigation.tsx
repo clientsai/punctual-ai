@@ -17,10 +17,10 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center shadow-lg">
               <span className="text-white font-bold text-lg">P</span>
             </div>
-            <span className="text-xl font-bold text-gray-900">Punctual.ai</span>
+            <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Punctual.ai</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -68,7 +68,9 @@ export function Navigation() {
               Sign in
             </Link>
             <Link href="https://app.punctual.ai/register">
-              <Button size="sm">Get started</Button>
+              <Button size="sm" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-200">
+                Get started
+              </Button>
             </Link>
           </div>
 
@@ -130,7 +132,9 @@ export function Navigation() {
                 Sign in
               </Link>
               <Link href="https://app.punctual.ai/register" className="block">
-                <Button className="w-full">Get started</Button>
+                <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-200">
+                  Get started
+                </Button>
               </Link>
             </div>
           </div>

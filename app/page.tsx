@@ -695,8 +695,28 @@ export default function Home() {
             
             <div className="max-w-2xl mx-auto mb-12">
               <form
-                action="https://app.punctual.ai/register"
-                method="GET"
+                onSubmit={async (e) => {
+                  e.preventDefault()
+                  const formData = new FormData(e.currentTarget)
+                  const email = formData.get('email')
+                  
+                  try {
+                    const response = await fetch('/api/subscribe', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ email })
+                    })
+                    
+                    if (response.ok) {
+                      alert('Thanks for subscribing! Check your email for confirmation.')
+                      e.currentTarget.reset()
+                    } else {
+                      alert('Subscription failed. Please try again.')
+                    }
+                  } catch (error) {
+                    alert('Network error. Please try again.')
+                  }
+                }}
                 className="flex flex-col sm:flex-row gap-4"
               >
                 <input
@@ -706,12 +726,10 @@ export default function Home() {
                   className="flex-1 px-6 py-4 text-lg rounded-xl text-gray-900 placeholder-gray-500 border-0 focus:ring-2 focus:ring-white/50"
                   required
                 />
-                <Link href="https://app.punctual.ai/register">
-                  <Button type="submit" size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                    Get Started Free
-                    <ArrowRight className="w-5 h-5 ml-2" />
-                  </Button>
-                </Link>
+                <Button type="submit" size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
+                  Get Started Free
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
               </form>
               <p className="text-sm mt-6 opacity-80">
                 Free forever for individuals • No credit card required • Setup in 2 minutes
@@ -719,10 +737,12 @@ export default function Home() {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg">
-                <ExternalLink className="w-5 h-5 mr-2" />
-                View Pricing
-              </Button>
+              <Link href="https://punctual.ai/pricing">
+                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg">
+                  <ExternalLink className="w-5 h-5 mr-2" />
+                  View Pricing
+                </Button>
+              </Link>
             </div>
           </motion.div>
         </div>

@@ -132,11 +132,30 @@ export default function DemoPage() {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    setIsSubmitting(false)
-    // Handle form submission here
+    try {
+      // Simulate form submission - in real app, this would send to your backend
+      await new Promise(resolve => setTimeout(resolve, 2000))
+      
+      // Show success message
+      alert('Demo request submitted successfully! We\'ll contact you within 24 hours to schedule your demo.')
+      
+      // Reset form
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        company: '',
+        role: '',
+        teamSize: '',
+        useCase: '',
+        additionalInfo: ''
+      })
+    } catch (error) {
+      alert('Failed to submit demo request. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -185,13 +204,13 @@ export default function DemoPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-dark">
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
+                onClick={() => document.getElementById('demo-form')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 <Calendar className="w-4 h-4 mr-2" />
                 Book Demo Now
-              </Button>
-              <Button variant="outline" size="lg">
-                <Video className="w-4 h-4 mr-2" />
-                Watch Video Demo
               </Button>
             </div>
           </motion.div>
@@ -263,7 +282,7 @@ export default function DemoPage() {
       </section>
 
       {/* Demo Booking Form */}
-      <section className="py-20 bg-gray-50">
+      <section id="demo-form" className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -631,7 +650,11 @@ export default function DemoPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold">
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
+                onClick={() => document.getElementById('demo-form')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 <Calendar className="w-5 h-5 mr-2" />
                 Book Demo Now
               </Button>
