@@ -649,7 +649,7 @@ export default function DemoPage() {
               your team's scheduling workflow. No commitment required.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <div className="flex justify-center">
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
@@ -657,10 +657,6 @@ export default function DemoPage() {
               >
                 <Calendar className="w-5 h-5 mr-2" />
                 Book Demo Now
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold">
-                <PhoneCall className="w-5 h-5 mr-2" />
-                Call Us: (555) 123-4567
               </Button>
             </div>
           </motion.div>
