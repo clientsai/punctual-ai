@@ -362,17 +362,23 @@ export default function PricingPage() {
                       )}
                     </div>
                     
-                    <Button
-                      className={`w-full ${
-                        plan.popular
-                          ? 'bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-dark'
-                          : 'bg-gray-900 hover:bg-gray-800'
-                      }`}
-                      size="lg"
-                    >
-                      {plan.cta}
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </Button>
+                    <Link href={
+                      plan.name === 'Free' ? 'https://app.punctual.ai/register' :
+                      plan.name === 'Pro' ? 'https://app.punctual.ai/register?plan=pro' :
+                      'https://punctual.ai/contact'
+                    }>
+                      <Button
+                        className={`w-full ${
+                          plan.popular
+                            ? 'bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-dark'
+                            : 'bg-gray-900 hover:bg-gray-800'
+                        }`}
+                        size="lg"
+                      >
+                        {plan.cta}
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
               </motion.div>
@@ -559,7 +565,7 @@ export default function PricingPage() {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
-              <Link href="https://app.punctual.ai/contact">
+              <Link href="https://punctual.ai/contact">
                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold">
                   <MessageSquare className="w-5 h-5 mr-2" />
                   Talk to Sales
