@@ -228,10 +228,12 @@ export default function PricingPage() {
                   Start Free Trial
                 </Button>
               </Link>
-              <Button variant="outline" size="lg">
-                <MessageSquare className="w-4 h-4 mr-2" />
-                Talk to Sales
-              </Button>
+              <Link href="https://punctual.ai/contact">
+                <Button variant="outline" size="lg">
+                  <MessageSquare className="w-4 h-4 mr-2" />
+                  Talk to Sales
+                </Button>
+              </Link>
             </div>
           </motion.div>
         </div>

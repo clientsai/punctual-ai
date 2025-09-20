@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import { Shield, Lock, Eye, Database, Globe, Users, FileText, CheckCircle, AlertTriangle, Clock, Mail, Phone, ArrowRight, Sparkles, Download, ExternalLink, Calendar, Settings, Zap, Heart } from 'lucide-react'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -696,14 +697,18 @@ export default function PrivacyPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold">
-                Start Free Trial
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold">
-                <Settings className="w-5 h-5 mr-2" />
-                Privacy Settings
-              </Button>
+              <Link href="https://app.punctual.ai/register">
+                <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold">
+                  Start Free Trial
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </Link>
+              <Link href="https://app.punctual.ai/settings">
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold">
+                  <Settings className="w-5 h-5 mr-2" />
+                  Privacy Settings
+                </Button>
+              </Link>
             </div>
           </motion.div>
         </div>
