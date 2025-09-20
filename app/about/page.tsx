@@ -113,32 +113,6 @@ const milestones = [
   },
 ]
 
-const press = [
-  {
-    publication: 'TechCrunch',
-    title: 'Punctual raises $15M to revolutionize meeting scheduling',
-    date: 'March 2024',
-    logo: 'techcrunch',
-  },
-  {
-    publication: 'Forbes',
-    title: 'How Punctual is eliminating the scheduling nightmare for remote teams',
-    date: 'February 2024',
-    logo: 'forbes',
-  },
-  {
-    publication: 'The Verge',
-    title: 'Punctual makes scheduling meetings as easy as sending a link',
-    date: 'January 2024',
-    logo: 'theverge',
-  },
-  {
-    publication: 'Wired',
-    title: 'The future of work: AI-powered scheduling that actually works',
-    date: 'December 2023',
-    logo: 'wired',
-  },
-]
 
 const stats = [
   { icon: Users, label: 'Active Users', value: '50,000+', description: 'Growing daily' },
@@ -491,61 +465,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Press Section with Enhanced Design */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-5xl font-bold text-gray-900 mb-6">
-              Featured in the <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Press</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              What industry leaders and publications are saying about Punctual
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {press.map((article, index) => (
-              <motion.div
-                key={article.publication}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="group"
-              >
-                <Card className="h-full hover:shadow-xl transition-all duration-300 group-hover:scale-105">
-                  <CardContent className="p-8">
-                    <div className="flex items-start justify-between mb-4">
-                      <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
-                        <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded"></div>
-                      </div>
-                      <Badge variant="outline" className="text-xs">
-                        {article.date}
-                      </Badge>
-                    </div>
-                    
-                    <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
-                      {article.title}
-                    </h3>
-                    <p className="text-sm text-gray-600 mb-4">{article.publication}</p>
-                    
-                    <Button variant="ghost" size="sm" className="group-hover:bg-primary group-hover:text-white transition-colors">
-                      Read Article
-                      <ExternalLink className="w-4 h-4 ml-2" />
-                    </Button>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section with Enhanced Design */}
       <section className="py-24 bg-gradient-to-r from-primary via-primary-dark to-accent text-white relative overflow-hidden">

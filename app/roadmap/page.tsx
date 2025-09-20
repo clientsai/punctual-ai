@@ -273,7 +273,7 @@ export default function RoadmapPage() {
           >
             <Badge variant="secondary" className="mb-4">Product Roadmap</Badge>
             <h1 className="text-5xl font-bold text-gray-900 mb-4">
-              Our Product Roadmap
+              Our Product <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Roadmap</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Discover what we're building next and how we're shaping the future of scheduling. 

@@ -174,7 +174,7 @@ export default function APIPage() {
           >
             <Badge variant="secondary" className="mb-4">API Documentation</Badge>
             <h1 className="text-5xl font-bold text-gray-900 mb-4">
-              Punctual API
+              Punctual <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">API</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Build powerful scheduling integrations with our comprehensive REST API. 

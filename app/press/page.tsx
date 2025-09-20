@@ -106,7 +106,7 @@ export default function PressPage() {
           >
             <Badge variant="secondary" className="mb-4">Press</Badge>
             <h1 className="text-5xl font-bold text-gray-900 mb-4">
-              Press & Media
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Press</span> & Media
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Stay updated with the latest news, announcements, and media coverage about Punctual.
