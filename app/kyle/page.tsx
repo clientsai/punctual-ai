@@ -21,70 +21,80 @@ export default function KyleBookingPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Pure Minimalist Header - removed for cleaner look */}
-      <header className="fixed top-0 z-50 w-full bg-white/70 backdrop-blur-3xl border-b border-gray-100/50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-5">
+      {/* Pure Minimalist Header - Jony: "Simplicity is not the absence of clutter" */}
+      <header className="fixed top-0 z-50 w-full bg-white/80 backdrop-blur-3xl border-b border-gray-100/40">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-center">
-            {/* Intentionally minimal - no branding */}
+            {/* Intentional emptiness speaks volumes */}
           </div>
         </div>
       </header>
 
-      {/* Hero Section - Jony Ive: Person first, credentials naturally follow */}
-      <section className="pt-24 sm:pt-32 pb-16 sm:pb-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <div className="text-center space-y-10 sm:space-y-12 animate-fade-in">
-            {/* Profile Image - Perfect circle, subtle shadow, Jony's signature depth */}
+      {/* Hero Section - Jony: Person first, everything else follows naturally */}
+      <section className="pt-28 sm:pt-36 pb-20 sm:pb-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <div className="text-center space-y-12 sm:space-y-14 animate-fade-in">
+            {/* Profile Image - Perfect precision, subtle depth */}
             <div className="relative inline-block">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-indigo-500/5 rounded-full blur-2xl scale-110" />
-              <div className="relative w-32 h-32 sm:w-40 sm:h-40 mx-auto">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gray-100/50 to-white shadow-2xl shadow-gray-300/30" />
+              {/* Ambient glow - felt, not seen */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/[0.04] via-transparent to-indigo-500/[0.04] rounded-full blur-3xl scale-125" />
+
+              <div className="relative w-36 h-36 sm:w-44 sm:h-44 mx-auto">
+                {/* Layered depth */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gray-50 to-white shadow-2xl shadow-gray-300/20" />
                 <Image
                   src="/kyle-profile.jpeg"
-                  alt="Kyle"
-                  width={160}
-                  height={160}
-                  className="relative rounded-full object-cover w-full h-full ring-1 ring-gray-100/50"
+                  alt="Kyle Campbell"
+                  width={176}
+                  height={176}
+                  className="relative rounded-full object-cover w-full h-full ring-[0.5px] ring-gray-200/60"
                   priority
                 />
               </div>
             </div>
 
-            {/* Typography Hierarchy - Jony style: Natural, effortless authority */}
-            <div className="space-y-6 sm:space-y-8">
-              <div className="space-y-4">
-                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extralight text-gray-950 tracking-[-0.03em] leading-[1.05]">
-                  Kyle
+            {/* Typography - Jony: Every letter matters */}
+            <div className="space-y-8 sm:space-y-10">
+              {/* Name - Monumental yet weightless */}
+              <div className="space-y-5">
+                <h1 className="text-6xl sm:text-7xl lg:text-8xl font-extralight text-gray-950 tracking-[-0.04em] leading-[0.95]">
+                  Kyle Campbell
                 </h1>
-                <div className="flex items-center justify-center space-x-2">
-                  <div className="w-1 h-1 rounded-full bg-gray-300" />
-                  <div className="w-1 h-1 rounded-full bg-gray-300" />
-                  <div className="w-1 h-1 rounded-full bg-gray-300" />
+
+                {/* Minimal separator - breath between sections */}
+                <div className="flex items-center justify-center space-x-2.5 py-2">
+                  <div className="w-1 h-1 rounded-full bg-gray-300/80" />
+                  <div className="w-1 h-1 rounded-full bg-gray-300/80" />
+                  <div className="w-1 h-1 rounded-full bg-gray-300/80" />
                 </div>
               </div>
 
-              {/* Credentials - Understated confidence, Jony never shouts */}
-              <div className="space-y-3 sm:space-y-4">
-                <div className="flex items-center justify-center gap-3 flex-wrap">
-                  <p className="text-xl sm:text-2xl font-light text-gray-900 tracking-tight leading-relaxed">
+              {/* Credentials - Confidence without arrogance */}
+              <div className="space-y-4 sm:space-y-5">
+                <div className="flex items-center justify-center gap-3 flex-wrap px-4">
+                  <h2 className="text-2xl sm:text-3xl font-light text-gray-900 tracking-[-0.01em] leading-tight">
                     7-Figure Clients.AI Founder
-                  </p>
-                  <span className="inline-flex items-center px-3 py-1 rounded-full bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100/50">
-                    <span className="text-xs font-light text-blue-600 tracking-wide">and counting</span>
+                  </h2>
+
+                  {/* "and counting" pill - playful precision */}
+                  <span className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-gradient-to-r from-blue-50/80 to-indigo-50/80 border border-blue-100/40 backdrop-blur-sm">
+                    <span className="text-xs font-light text-blue-600/90 tracking-wide">and counting</span>
                   </span>
                 </div>
-                <div className="flex items-center justify-center space-x-3 text-base sm:text-lg font-light text-gray-500">
-                  <span>AI Innovator</span>
-                  <span className="text-gray-300">·</span>
-                  <span>Dog Lover</span>
+
+                {/* Supporting details - hierarchy through restraint */}
+                <div className="flex items-center justify-center gap-4 text-lg sm:text-xl font-light text-gray-500/90 flex-wrap px-4">
+                  <span className="tracking-tight">AI Innovator</span>
+                  <span className="text-gray-300/80">·</span>
+                  <span className="tracking-tight">Dog Lover</span>
                 </div>
               </div>
 
-              {/* Subtle divider */}
-              <div className="w-16 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent mx-auto" />
+              {/* Divider - the smallest details matter most */}
+              <div className="w-20 h-[0.5px] bg-gradient-to-r from-transparent via-gray-200/60 to-transparent mx-auto" />
 
-              {/* Invitation - Warm, simple, purposeful */}
-              <p className="text-lg sm:text-xl font-light text-gray-600 max-w-2xl mx-auto leading-relaxed px-4">
+              {/* Invitation - warmth through simplicity */}
+              <p className="text-xl sm:text-2xl font-light text-gray-600/90 max-w-2xl mx-auto leading-relaxed tracking-[-0.01em] px-6">
                 Let&apos;s connect and explore what we can build together.
               </p>
             </div>
@@ -92,25 +102,25 @@ export default function KyleBookingPage() {
         </div>
       </section>
 
-      {/* Calendly Section - The tool serves the purpose, never dominates */}
-      <section className="pb-24 sm:pb-32">
+      {/* Calendly Section - Form follows function, beauty emerges */}
+      <section className="pb-28 sm:pb-36">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-          <div className="relative group animate-slide-up">
-            {/* Ambient glow - barely perceptible, felt not seen */}
-            <div className="absolute -inset-6 bg-gradient-to-br from-blue-500/[0.02] via-transparent to-indigo-500/[0.02] rounded-[40px] blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-[1200ms]" />
+          <div className="relative group">
+            {/* Ambient light - barely perceptible transition */}
+            <div className="absolute -inset-8 bg-gradient-to-br from-blue-500/[0.015] via-transparent to-indigo-500/[0.015] rounded-[48px] blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-[1400ms]" />
 
-            {/* Main container - Pure, elevated, glass-like */}
-            <div className="relative bg-white/95 backdrop-blur-2xl rounded-3xl sm:rounded-[32px] shadow-2xl shadow-gray-200/30 border border-gray-100/70 overflow-hidden transition-all duration-700 hover:shadow-3xl hover:shadow-gray-200/40">
-              {/* Top light reflection - Jony's signature touch */}
-              <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/80 to-transparent" />
+            {/* Main container - Precision engineering */}
+            <div className="relative bg-white/98 backdrop-blur-2xl rounded-[32px] shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-gray-100/60 overflow-hidden transition-all duration-[800ms] hover:shadow-[0_20px_60px_rgb(0,0,0,0.1)]">
+              {/* Light reflection - Apple's signature */}
+              <div className="absolute top-0 inset-x-0 h-[0.5px] bg-gradient-to-r from-transparent via-white/90 to-transparent" />
 
-              {/* Inner subtle border */}
-              <div className="absolute inset-0 rounded-3xl sm:rounded-[32px] ring-1 ring-inset ring-gray-100/50 pointer-events-none" />
+              {/* Inner ring - layered refinement */}
+              <div className="absolute inset-0 rounded-[32px] ring-1 ring-inset ring-gray-100/40 pointer-events-none" />
 
-              {/* Calendly Widget Container */}
+              {/* Calendly Widget */}
               <div className="relative p-0">
                 <div
-                  className="calendly-inline-widget transition-opacity duration-500"
+                  className="calendly-inline-widget transition-opacity duration-[600ms]"
                   data-url="https://calendly.com/kyle-9lw/new-meeting"
                   style={{
                     minWidth: '320px',
@@ -122,31 +132,31 @@ export default function KyleBookingPage() {
             </div>
           </div>
 
-          {/* Minimal attribution - Respectful, unobtrusive */}
-          <div className="mt-12 sm:mt-16 text-center space-y-3">
-            <div className="w-6 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent mx-auto" />
-            <p className="text-[10px] sm:text-xs font-light text-gray-400 tracking-[0.08em] uppercase">
+          {/* Attribution - respectful, unassuming */}
+          <div className="mt-14 sm:mt-18 text-center space-y-3.5">
+            <div className="w-8 h-[0.5px] bg-gradient-to-r from-transparent via-gray-200/50 to-transparent mx-auto" />
+            <p className="text-[11px] sm:text-xs font-light text-gray-400/80 tracking-[0.1em] uppercase">
               Scheduling by Calendly
             </p>
           </div>
         </div>
       </section>
 
-      {/* Footer - Powered by Clients.ai */}
-      <footer className="py-10 sm:py-12 border-t border-gray-50">
+      {/* Footer - The final detail */}
+      <footer className="py-12 sm:py-14 border-t border-gray-100/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center">
             <a
               href="https://clients.ai"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center gap-1 hover:opacity-80 transition-opacity cursor-pointer"
+              className="flex flex-col items-center gap-1.5 hover:opacity-70 transition-opacity duration-300 cursor-pointer group"
             >
-              <span className="text-xs font-light text-gray-400">Powered by</span>
+              <span className="text-xs font-light text-gray-400/90 tracking-tight">Powered by</span>
               <img
                 src="/clients-ai-logo.png"
                 alt="Clients.ai"
-                className="h-5 object-contain"
+                className="h-5 object-contain transition-transform duration-300 group-hover:scale-105"
               />
             </a>
           </div>
