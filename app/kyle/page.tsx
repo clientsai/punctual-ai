@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function KyleBookingPage() {
   useEffect(() => {
-    // Load Calendly script
+    // Load Calendly script - force deployment
     const script = document.createElement('script')
     script.src = 'https://assets.calendly.com/assets/external/widget.js'
     script.async = true
