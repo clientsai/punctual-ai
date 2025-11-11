@@ -21,11 +21,11 @@ export default function KyleBookingPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Pure Minimalist Header */}
+      {/* Pure Minimalist Header - removed for cleaner look */}
       <header className="fixed top-0 z-50 w-full bg-white/70 backdrop-blur-3xl border-b border-gray-100/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <div className="flex items-center justify-center">
-            <div className="w-1.5 h-1.5 rounded-full bg-gray-900" />
+            {/* Intentionally minimal - no branding */}
           </div>
         </div>
       </header>
@@ -65,9 +65,14 @@ export default function KyleBookingPage() {
 
               {/* Credentials - Understated confidence, Jony never shouts */}
               <div className="space-y-3 sm:space-y-4">
-                <p className="text-xl sm:text-2xl font-light text-gray-900 tracking-tight leading-relaxed">
-                  7-Figure Founder
-                </p>
+                <div className="flex items-center justify-center gap-3 flex-wrap">
+                  <p className="text-xl sm:text-2xl font-light text-gray-900 tracking-tight leading-relaxed">
+                    7-Figure Clients.AI Founder
+                  </p>
+                  <span className="inline-flex items-center px-3 py-1 rounded-full bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100/50">
+                    <span className="text-xs font-light text-blue-600 tracking-wide">and counting</span>
+                  </span>
+                </div>
                 <div className="flex items-center justify-center space-x-3 text-base sm:text-lg font-light text-gray-500">
                   <span>AI Innovator</span>
                   <span className="text-gray-300">·</span>
