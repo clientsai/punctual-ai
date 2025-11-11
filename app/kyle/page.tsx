@@ -69,24 +69,25 @@ export default function KyleBookingPage() {
                 </div>
               </div>
 
-              {/* Credentials - Confidence without arrogance */}
-              <div className="space-y-4 sm:space-y-5">
-                <div className="flex items-center justify-center gap-3 flex-wrap px-4">
-                  <h2 className="text-2xl sm:text-3xl font-light text-gray-900 tracking-[-0.01em] leading-tight">
-                    7-Figure Clients.AI Founder
-                  </h2>
-
-                  {/* "and counting" pill - playful precision */}
-                  <span className="inline-flex items-center px-3.5 py-1.5 rounded-full bg-gradient-to-r from-blue-50/80 to-indigo-50/80 border border-blue-100/40 backdrop-blur-sm">
-                    <span className="text-xs font-light text-blue-600/90 tracking-wide">and counting</span>
+              {/* Credentials - Nonchalant, no big deal */}
+              <div className="space-y-5">
+                {/* Badge containers - casual confidence */}
+                <div className="flex items-center justify-center gap-2.5 flex-wrap px-4">
+                  <span className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-gray-50 to-gray-100/80 border border-gray-200/40 backdrop-blur-sm">
+                    <span className="text-sm font-light text-gray-700 tracking-tight">7-Figure Founder</span>
                   </span>
-                </div>
 
-                {/* Supporting details - hierarchy through restraint */}
-                <div className="flex items-center justify-center gap-4 text-lg sm:text-xl font-light text-gray-500/90 flex-wrap px-4">
-                  <span className="tracking-tight">AI Innovator</span>
-                  <span className="text-gray-300/80">·</span>
-                  <span className="tracking-tight">Dog Lover</span>
+                  <span className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-blue-50/60 to-indigo-50/60 border border-blue-100/30 backdrop-blur-sm">
+                    <span className="text-sm font-light text-gray-700 tracking-tight">Clients.AI</span>
+                  </span>
+
+                  <span className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-gray-50 to-gray-100/80 border border-gray-200/40 backdrop-blur-sm">
+                    <span className="text-sm font-light text-gray-700 tracking-tight">Builder</span>
+                  </span>
+
+                  <span className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-gray-50 to-gray-100/80 border border-gray-200/40 backdrop-blur-sm">
+                    <span className="text-sm font-light text-gray-700 tracking-tight">Dog Dad</span>
+                  </span>
                 </div>
               </div>
 
