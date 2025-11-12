@@ -10,175 +10,175 @@ import { Button } from '@/components/ui/button'
 
 const coreFeatures = [
   {
-    title: 'Smart Scheduling',
-    description: 'AI-powered scheduling that finds the perfect meeting times for everyone',
-    details: 'Our intelligent algorithm analyzes availability, preferences, and constraints to suggest optimal meeting times automatically.',
-    icon: Calendar,
+    title: 'Pre-Meeting Intelligence Briefs',
+    description: 'Know who you\'re talking to before you say a word',
+    details: 'Before every meeting, receive a detailed psychological profile analyzing communication style, decision-making patterns, personality type, and conversation triggers. Never walk into a meeting blind again—and never say the wrong thing.',
+    icon: Eye,
     color: 'from-blue-500 to-blue-600',
     gradient: 'bg-gradient-to-br from-blue-50 to-blue-100',
     benefits: [
-      'Automatic time zone detection',
-      'Conflict resolution',
-      'Buffer time management',
-      'Recurring meeting support',
+      'Personality and communication style analysis',
+      'Decision-making pattern mapping',
+      'Conversation trigger identification',
+      'Historical interaction insights',
     ],
   },
   {
-    title: 'Team Collaboration',
-    description: 'Seamlessly coordinate with your team and external partners',
-    details: 'Built-in team features that make it easy to manage group schedules, assign meetings, and collaborate effectively.',
-    icon: Users,
+    title: 'What to Say (and NOT to Say)',
+    description: 'Conversation roadmaps that prevent costly mistakes',
+    details: 'Get specific talking points that resonate with each person, plus explicit warnings about topics to avoid, communication styles that backfire, and phrases that kill deals. The difference between closing and losing often comes down to one wrong sentence.',
+    icon: MessageSquare,
     color: 'from-green-500 to-green-600',
     gradient: 'bg-gradient-to-br from-green-50 to-green-100',
     benefits: [
-      'Team availability views',
-      'Round-robin scheduling',
-      'Shared calendars',
-      'Group meeting coordination',
+      'Recommended talking points and angles',
+      'Topics and phrases to avoid',
+      'Communication style preferences',
+      'Objection handling strategies',
     ],
   },
   {
-    title: 'Global Integration',
-    description: 'Connect with 50+ tools and platforms you already use',
-    details: 'Seamlessly integrate with your existing workflow through our extensive library of connectors and APIs.',
-    icon: Globe,
+    title: 'Deep Contact Research',
+    description: 'Intelligence pulled from everywhere they exist online',
+    details: 'Punctual automatically researches your meeting attendees across LinkedIn, company websites, social media, news mentions, and your CRM. Every data point becomes a psychological insight that helps you connect faster and build rapport instantly.',
+    icon: Database,
     color: 'from-purple-500 to-purple-600',
     gradient: 'bg-gradient-to-br from-purple-50 to-purple-100',
     benefits: [
-      'Calendar synchronization',
-      'Video conferencing integration',
-      'CRM connectivity',
-      'Custom API endpoints',
+      'LinkedIn profile analysis',
+      'Company and role context',
+      'Social media sentiment analysis',
+      'CRM history integration',
     ],
   },
   {
-    title: 'Enterprise Security',
-    description: 'Bank-level security with compliance certifications',
-    details: 'Your data is protected with enterprise-grade security measures and compliance with major industry standards.',
-    icon: Shield,
+    title: 'Team Intelligence Sharing',
+    description: 'When one person learns, everyone benefits',
+    details: 'Share psychological insights and conversation intelligence across your entire team. If someone discovers what works (or what to avoid) with a client, that knowledge becomes institutional. Stop losing deals because someone didn\'t know better.',
+    icon: Users,
     color: 'from-orange-500 to-orange-600',
     gradient: 'bg-gradient-to-br from-orange-50 to-orange-100',
     benefits: [
-      'SOC 2 Type II certified',
-      'GDPR compliant',
-      'End-to-end encryption',
-      'Advanced access controls',
+      'Shared contact intelligence database',
+      'Team conversation playbooks',
+      'Collective learning and insights',
+      'Mistake prevention alerts',
     ],
   },
 ]
 
 const advancedFeatures = [
   {
-    category: 'Scheduling',
+    category: 'Psychological Analysis',
     features: [
       {
-        name: 'Availability Management',
-        description: 'Set your availability with flexible rules and automatic updates',
-        icon: Clock,
+        name: 'Personality Profiling',
+        description: 'DISC, Myers-Briggs style mapping and behavioral pattern analysis',
+        icon: Eye,
         color: 'from-blue-500 to-blue-600',
       },
       {
-        name: 'Meeting Templates',
-        description: 'Create reusable meeting types with predefined settings',
-        icon: Settings,
-        color: 'from-green-500 to-green-600',
-      },
-      {
-        name: 'Buffer Time',
-        description: 'Automatically add buffer time between meetings',
-        icon: Zap,
-        color: 'from-purple-500 to-purple-600',
-      },
-      {
-        name: 'Recurring Meetings',
-        description: 'Set up recurring meetings with smart conflict resolution',
-        icon: Calendar,
-        color: 'from-orange-500 to-orange-600',
-      },
-    ],
-  },
-  {
-    category: 'Team Management',
-    features: [
-      {
-        name: 'Team Pages',
-        description: 'Create dedicated booking pages for your team',
-        icon: Users,
-        color: 'from-blue-500 to-blue-600',
-      },
-      {
-        name: 'Role-Based Access',
-        description: 'Control who can access what with granular permissions',
-        icon: Lock,
-        color: 'from-green-500 to-green-600',
-      },
-      {
-        name: 'Group Scheduling',
-        description: 'Find times that work for multiple people',
-        icon: Globe,
-        color: 'from-purple-500 to-purple-600',
-      },
-      {
-        name: 'Team Analytics',
-        description: 'Track team performance and meeting patterns',
-        icon: Target,
-        color: 'from-orange-500 to-orange-600',
-      },
-    ],
-  },
-  {
-    category: 'Integrations',
-    features: [
-      {
-        name: 'Calendar Sync',
-        description: 'Sync with Google Calendar, Outlook, and more',
-        icon: Calendar,
-        color: 'from-blue-500 to-blue-600',
-      },
-      {
-        name: 'Video Conferencing',
-        description: 'Integrate with Zoom, Teams, and other platforms',
+        name: 'Communication Style Detection',
+        description: 'Identify if they\'re direct, analytical, expressive, or amiable communicators',
         icon: MessageSquare,
         color: 'from-green-500 to-green-600',
       },
       {
-        name: 'CRM Integration',
-        description: 'Connect with Salesforce, HubSpot, and other CRMs',
+        name: 'Decision-Making Patterns',
+        description: 'Understand how they make decisions: data-driven, consensus-based, or intuitive',
+        icon: Target,
+        color: 'from-purple-500 to-purple-600',
+      },
+      {
+        name: 'Objection Prediction',
+        description: 'AI-powered analysis of likely objections and how to address them',
+        icon: Shield,
+        color: 'from-orange-500 to-orange-600',
+      },
+    ],
+  },
+  {
+    category: 'Contact Intelligence',
+    features: [
+      {
+        name: 'LinkedIn Deep Dive',
+        description: 'Analyze career trajectory, connections, interests, and engagement patterns',
+        icon: Users,
+        color: 'from-blue-500 to-blue-600',
+      },
+      {
+        name: 'Social Sentiment Analysis',
+        description: 'What they care about, post about, and respond to online',
+        icon: Heart,
+        color: 'from-green-500 to-green-600',
+      },
+      {
+        name: 'Company Context',
+        description: 'Understand their company culture, recent news, and strategic priorities',
+        icon: Globe,
+        color: 'from-purple-500 to-purple-600',
+      },
+      {
+        name: 'Relationship Mapping',
+        description: 'See connections between your network and theirs',
+        icon: Target,
+        color: 'from-orange-500 to-orange-600',
+      },
+    ],
+  },
+  {
+    category: 'Conversation Intelligence',
+    features: [
+      {
+        name: 'Talking Point Generation',
+        description: 'AI-suggested conversation starters that build rapport instantly',
+        icon: Sparkles,
+        color: 'from-blue-500 to-blue-600',
+      },
+      {
+        name: 'Red Flag Alerts',
+        description: 'Explicit warnings about topics, phrases, and approaches to avoid',
+        icon: Clock,
+        color: 'from-green-500 to-green-600',
+      },
+      {
+        name: 'Rapport Building Strategy',
+        description: 'Specific tactics to connect based on shared interests and values',
         icon: Database,
         color: 'from-purple-500 to-purple-600',
       },
       {
-        name: 'Custom APIs',
-        description: 'Build custom integrations with our robust API',
+        name: 'Follow-Up Recommendations',
+        description: 'What to say after the meeting based on how it went',
         icon: Settings,
         color: 'from-orange-500 to-orange-600',
       },
     ],
   },
   {
-    category: 'Analytics',
+    category: 'Team Intelligence',
     features: [
       {
-        name: 'Meeting Insights',
-        description: 'Get detailed analytics on your meeting patterns',
-        icon: Target,
+        name: 'Shared Contact Database',
+        description: 'Centralized intelligence repository accessible to your entire team',
+        icon: Database,
         color: 'from-blue-500 to-blue-600',
       },
       {
-        name: 'Productivity Metrics',
-        description: 'Track time saved and efficiency gains',
+        name: 'Conversation Playbooks',
+        description: 'Document what works (and what doesn\'t) for each contact',
         icon: Zap,
         color: 'from-green-500 to-green-600',
       },
       {
-        name: 'Custom Reports',
-        description: 'Create custom reports for your specific needs',
+        name: 'Mistake Prevention System',
+        description: 'Alert team members before they repeat past mistakes',
         icon: Settings,
         color: 'from-purple-500 to-purple-600',
       },
       {
-        name: 'Export Data',
-        description: 'Export your data in various formats',
+        name: 'Performance Analytics',
+        description: 'Track which approaches win deals and which kill them',
         icon: Download,
         color: 'from-orange-500 to-orange-600',
       },
@@ -189,78 +189,78 @@ const advancedFeatures = [
 const useCases = [
   {
     title: 'Sales Teams',
-    description: 'Streamline lead qualification and customer meetings',
+    description: 'Close more deals by understanding buyer psychology',
     icon: Target,
     color: 'from-blue-500 to-blue-600',
     features: [
-      'Lead qualification automation',
-      'Customer meeting scheduling',
-      'Sales pipeline integration',
-      'Performance tracking',
+      'Buyer personality and objection analysis',
+      'Decision-maker communication mapping',
+      'Deal-killing phrase alerts',
+      'Competitive intelligence integration',
     ],
   },
   {
-    title: 'HR Departments',
-    description: 'Manage interviews and employee meetings efficiently',
+    title: 'Recruiting Teams',
+    description: 'Land top candidates by understanding what motivates them',
     icon: Users,
     color: 'from-green-500 to-green-600',
     features: [
-      'Interview scheduling',
-      'Employee onboarding',
-      'Performance reviews',
-      'Team building events',
+      'Candidate motivation and values analysis',
+      'Career trajectory pattern recognition',
+      'Interview approach recommendations',
+      'Offer presentation strategy',
     ],
   },
   {
     title: 'Consultants',
-    description: 'Manage client meetings and project coordination',
+    description: 'Command premium rates with unmatched client preparation',
     icon: Globe,
     color: 'from-purple-500 to-purple-600',
     features: [
-      'Client meeting booking',
-      'Project milestone tracking',
-      'Time zone management',
-      'Billing integration',
+      'Client psychology and communication preferences',
+      'Stakeholder influence mapping',
+      'Objection handling playbooks',
+      'Relationship development roadmaps',
     ],
   },
   {
-    title: 'Remote Teams',
-    description: 'Coordinate across time zones and locations',
-    icon: Clock,
+    title: 'Executives',
+    description: 'Make every high-stakes conversation count',
+    icon: Award,
     color: 'from-orange-500 to-orange-600',
     features: [
-      'Global time zone support',
-      'Virtual meeting coordination',
-      'Async communication',
-      'Team availability tracking',
+      'Board member and investor profiling',
+      'Partnership negotiation intelligence',
+      'Crisis communication preparation',
+      'Media and PR conversation strategy',
     ],
   },
 ]
 
 const testimonials = [
   {
-    name: 'Sales Team',
-    role: 'Sales Director',
-    company: 'TechCorp',
-    quote: 'Punctual has revolutionized how we manage our sales meetings. The team scheduling features are incredible.',
+    name: 'Sarah Chen',
+    role: 'VP Sales',
+    company: 'Enterprise SaaS',
+    quote: 'We stopped losing deals because someone said the wrong thing. The pre-meeting briefs are like having a psychologist prep you before every call. Our close rate jumped 34%.',
     rating: 5,
-    feature: 'Team Scheduling',
+    feature: 'Intelligence Briefs',
   },
   {
-    name: 'Executive Team',
-    role: 'CEO',
-    company: 'StartupXYZ',
-    quote: 'The integrations are seamless. We can now schedule meetings directly from our CRM.',
+    name: 'Michael Rodriguez',
+    role: 'Executive Recruiter',
+    company: 'TalentFirst',
+    quote: 'I used to research candidates for hours. Now Punctual tells me what motivates them, what to emphasize in my pitch, and what red flags to avoid. I close offers faster than ever.',
     rating: 5,
-    feature: 'CRM Integration',
+    feature: 'Psychological Profiling',
   },
   {
-    name: 'HR Team',
-    role: 'HR Manager',
-    company: 'GlobalCorp',
-    quote: 'Managing interviews across multiple time zones is now effortless with Punctual.',
+    name: 'James Patterson',
+    role: 'Management Consultant',
+    company: 'Independent',
+    quote: 'My clients think I\'m psychic. I walk in knowing their communication style, decision-making process, and exactly how to present my recommendations. It\'s unfair—but it works.',
     rating: 5,
-    feature: 'Global Scheduling',
+    feature: 'Communication Mapping',
   },
 ]
 
@@ -283,29 +283,28 @@ export default function FeaturesPage() {
           >
             <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm">
               <Sparkles className="w-4 h-4 mr-2" />
-              Powerful Features
+              Psychological Intelligence
             </Badge>
-            
+
             <h1 className="text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Everything You Need to <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Schedule Smarter</span>
+              Never Say the <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Wrong Thing Again</span>
             </h1>
-            
+
             <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-8 leading-relaxed">
-              Discover the comprehensive set of features that make Punctual the most 
-              powerful scheduling platform for individuals, teams, and enterprises.
+              While other tools just book the time slot, Punctual researches who you\'re meeting, analyzes their psychology, and tells you exactly what to say—and what never to say. Walk into every conversation prepared, confident, and armed with intelligence your competition doesn\'t have.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="https://app.punctual.ai/register">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-dark">
                   <Rocket className="w-4 h-4 mr-2" />
-                  Start Free Trial
+                  Get Your First Brief
                 </Button>
               </Link>
               <Link href="https://punctual.ai/demo">
                 <Button variant="outline" size="lg">
                   <Play className="w-4 h-4 mr-2" />
-                  Watch Demo
+                  See Intelligence in Action
                 </Button>
               </Link>
             </div>
@@ -324,10 +323,10 @@ export default function FeaturesPage() {
             className="text-center mb-16"
           >
             <h2 className="text-5xl font-bold text-gray-900 mb-6">
-              Core <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Features</span>
+              Intelligence <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">That Wins Meetings</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              The essential features that make Punctual the most powerful scheduling platform
+              The psychological analysis and pre-meeting intelligence that transforms how you communicate
             </p>
           </motion.div>
 
@@ -386,10 +385,10 @@ export default function FeaturesPage() {
             className="text-center mb-16"
           >
             <h2 className="text-5xl font-bold text-gray-900 mb-6">
-              Advanced <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Features</span>
+              Every Detail <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Matters</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Explore our comprehensive feature set organized by category
+              From psychological profiling to conversation analytics—the complete intelligence platform for meeting preparation
             </p>
           </motion.div>
 
@@ -445,10 +444,10 @@ export default function FeaturesPage() {
             className="text-center mb-16"
           >
             <h2 className="text-5xl font-bold text-gray-900 mb-6">
-              Perfect for <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Every Team</span>
+              Intelligence for <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Every Profession</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              See how different teams use Punctual to solve their scheduling challenges
+              See how professionals use psychological intelligence to win more conversations
             </p>
           </motion.div>
 
@@ -499,10 +498,10 @@ export default function FeaturesPage() {
             className="text-center mb-16"
           >
             <h2 className="text-5xl font-bold text-gray-900 mb-6">
-              What Our <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Customers Say</span>
+              Real People, <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Real Results</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Real feedback from teams using our features
+              Professionals who stopped guessing and started winning
             </p>
           </motion.div>
 
@@ -560,24 +559,23 @@ export default function FeaturesPage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-5xl font-bold mb-6">
-              Ready to Experience These Features?
+              Stop Embarrassing Yourself
             </h2>
             <p className="text-xl mb-10 opacity-90 leading-relaxed">
-              Start your free trial today and discover how Punctual can transform 
-              your scheduling workflow.
+              Get your first intelligence brief in 2 minutes. See exactly what you should say—and what you should never say—before your next meeting.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link href="https://app.punctual.ai/register">
                 <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold">
-                  Start Free Trial
+                  Get First Brief Free
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </Link>
               <Link href="https://punctual.ai/demo">
                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold">
                   <Play className="w-5 h-5 mr-2" />
-                  Watch Demo
+                  See Sample Brief
                 </Button>
               </Link>
             </div>

@@ -415,25 +415,23 @@ export default function Home() {
             >
               <Badge className="mb-6 px-4 py-2 text-sm bg-gradient-to-r from-accent to-primary text-white">
                 <Users className="w-4 h-4 mr-2" />
-                Team Collaboration
+                Team Intelligence
               </Badge>
               <h2 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Coordinate Your <span className="bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">Entire Team</span>
+                Arm Your <span className="bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">Entire Team</span>
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Scale scheduling across your organization with intelligent team coordination. 
-                Round-robin assignments, collective availability, and smart workload distribution 
-                ensure your team operates at peak efficiency while maintaining work-life balance.
+                Every team member walks into every meeting fully prepared. Share psychological intelligence reports, conversation strategies, and pre-meeting briefs across your entire organization. When one person learns what works with a client, everyone benefits. No more repeating mistakes or losing deals because someone didn't know what to avoid.
               </p>
-              
+
               <div className="grid grid-cols-2 gap-6 mb-8">
                 {[
-                  'Automatic distribution',
-                  'Team booking pages',
-                  'Collective scheduling',
-                  'Admin controls',
-                  'Workload balancing',
-                  'Performance insights',
+                  'Shared intelligence reports',
+                  'Team-wide contact insights',
+                  'Conversation playbooks',
+                  'Mistake prevention alerts',
+                  'Collective relationship intelligence',
+                  'Cross-team learning',
                 ].map((feature, index) => (
                   <div key={feature} className="flex items-center">
                     <CheckCircle className="w-5 h-5 text-accent mr-3 flex-shrink-0" />
@@ -444,12 +442,12 @@ export default function Home() {
               
               <div className="flex items-center gap-4">
                 <Button size="lg" className="bg-gradient-to-r from-accent to-primary hover:from-accent-dark hover:to-primary-dark">
-                  Start Team Trial
+                  Prepare Your Team
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Button>
                 <Button variant="outline" size="lg">
                   <Download className="w-4 h-4 mr-2" />
-                  Download Guide
+                  Team Intelligence Guide
                 </Button>
               </div>
             </motion.div>
@@ -473,10 +471,10 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-5xl font-bold mb-6">
-              Trusted by Teams Worldwide
+              The Numbers Tell the Story
             </h2>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
-              Join thousands of professionals who've transformed their scheduling with Punctual
+              Professionals who prepare with psychological intelligence win more deals, build rapport faster, and never embarrass themselves again
             </p>
           </motion.div>
 
@@ -514,14 +512,13 @@ export default function Home() {
           >
             <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm">
               <Target className="w-4 h-4 mr-2" />
-              Perfect for Every Team
+              Intelligence for Every Profession
             </Badge>
             <h2 className="text-5xl font-bold text-gray-900 mb-6">
-              Built for <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Every Industry</span>
+              Where Preparation <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Meets Opportunity</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Whether you're in sales, consulting, healthcare, or any other industry, 
-              Punctual adapts to your specific needs and workflows.
+              Sales teams close bigger deals. Consultants command premium rates. Recruiters place better candidates. Because they never walk into a conversation unprepared for who's on the other side.
             </p>
           </motion.div>
 
@@ -571,13 +568,13 @@ export default function Home() {
           >
             <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm">
               <Heart className="w-4 h-4 mr-2" />
-              Customer Stories
+              Real Results
             </Badge>
             <h2 className="text-5xl font-bold text-gray-900 mb-6">
-              Loved by <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Teams Worldwide</span>
+              The Difference <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Preparation Makes</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              See how Punctual has transformed scheduling for teams across industries
+              Hear from professionals who stopped winging it and started winning
             </p>
           </motion.div>
 
@@ -632,13 +629,13 @@ export default function Home() {
           >
             <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm">
               <Globe className="w-4 h-4 mr-2" />
-              Seamless Integration
+              Intelligence Everywhere
             </Badge>
             <h2 className="text-5xl font-bold text-gray-900 mb-6">
-              Works with <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">100+ Tools</span>
+              Your Tools, <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Supercharged</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Connect Punctual with your existing workflow. No disruption, just better scheduling.
+              Pull contact intelligence from your CRM, calendar, email, and social profiles. Every data point becomes a psychological insight.
             </p>
           </motion.div>
 
@@ -687,10 +684,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-6xl font-bold mb-6">
-              Start Scheduling Smarter Today
+              Stop Walking In Blind
             </h2>
             <p className="text-2xl mb-12 opacity-90 leading-relaxed">
-              Join 50,000+ professionals who've eliminated scheduling hassle and reclaimed their time
+              Join 50,000+ professionals who prepare with psychological intelligence and never embarrass themselves in meetings again
             </p>
             
             <div className="max-w-2xl mx-auto mb-12">
@@ -727,12 +724,12 @@ export default function Home() {
                   required
                 />
                 <Button type="submit" size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl">
-                  Get Started Free
+                  Start Preparing Better
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
               </form>
               <p className="text-sm mt-6 opacity-80">
-                Free forever for individuals • No credit card required • Setup in 2 minutes
+                Free forever • First intelligence report in 2 minutes • No credit card required
               </p>
             </div>
             

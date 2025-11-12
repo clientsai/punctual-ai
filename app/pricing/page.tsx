@@ -13,21 +13,21 @@ const pricingPlans = [
     name: 'Free',
     price: 0,
     period: 'month',
-    description: 'Perfect for individuals getting started with scheduling',
+    description: 'Stop embarrassing yourself in basic meetings',
     features: [
-      '1 calendar integration',
-      'Basic scheduling',
-      'Email support',
-      'Standard templates',
-      'Mobile app access',
-      'Basic analytics',
+      '10 intelligence briefs per month',
+      'Basic personality profiling',
+      'LinkedIn profile analysis',
+      'Communication style detection',
+      'What NOT to say alerts',
+      'Email delivery of briefs',
     ],
     limitations: [
       'Limited to 10 meetings per month',
-      'Basic customization options',
-      'Standard response time',
+      'Basic psychological analysis',
+      'Standard brief delivery',
     ],
-    cta: 'Get Started Free',
+    cta: 'Start Preparing Better',
     popular: false,
     color: 'from-gray-500 to-gray-600',
     gradient: 'bg-gradient-to-br from-gray-50 to-gray-100',
@@ -37,21 +37,21 @@ const pricingPlans = [
     name: 'Pro',
     price: 12,
     period: 'month',
-    description: 'Ideal for professionals and small teams',
+    description: 'Win every conversation with deep intelligence',
     features: [
-      'Unlimited calendar integrations',
-      'Advanced scheduling features',
-      'Priority support',
-      'Custom branding',
-      'Team collaboration',
-      'Advanced analytics',
-      'API access',
-      'Custom fields',
-      'Automated reminders',
-      'Time zone detection',
+      'Unlimited intelligence briefs',
+      'Advanced psychological profiling',
+      'Deep social media analysis',
+      'Decision-making pattern mapping',
+      'Objection prediction & handling',
+      'Conversation strategy roadmaps',
+      'Real-time brief updates',
+      'Team intelligence sharing',
+      'CRM integration for historical context',
+      'Custom talking point generation',
     ],
     limitations: [],
-    cta: 'Start Pro Trial',
+    cta: 'Never Lose Again',
     popular: true,
     color: 'from-blue-500 to-blue-600',
     gradient: 'bg-gradient-to-br from-blue-50 to-blue-100',
@@ -61,21 +61,21 @@ const pricingPlans = [
     name: 'Enterprise',
     price: 45,
     period: 'month',
-    description: 'For large organizations with advanced needs',
+    description: 'Arm your entire organization with intelligence',
     features: [
       'Everything in Pro',
       'Unlimited team members',
-      'Advanced security',
-      'Custom integrations',
-      'Dedicated support',
-      'SLA guarantee',
-      'Custom deployment',
-      'Advanced reporting',
-      'White-label options',
-      'Training & onboarding',
+      'Shared intelligence database',
+      'Team conversation playbooks',
+      'Mistake prevention system',
+      'Dedicated intelligence analyst',
+      'Custom integration with your tools',
+      'Advanced relationship mapping',
+      'White-label intelligence reports',
+      'Training & strategic consulting',
     ],
     limitations: [],
-    cta: 'Contact Sales',
+    cta: 'Talk to Intelligence Team',
     popular: false,
     color: 'from-purple-500 to-purple-600',
     gradient: 'bg-gradient-to-br from-purple-50 to-purple-100',
@@ -86,31 +86,31 @@ const pricingPlans = [
 const addOns = [
   {
     name: 'Additional Team Members',
-    description: 'Add more team members to your plan',
+    description: 'Extend intelligence access across your team',
     price: 5,
     period: 'per user/month',
     icon: Users,
     color: 'from-blue-500 to-blue-600',
   },
   {
-    name: 'Advanced Analytics',
-    description: 'Get detailed insights and reporting',
+    name: 'Conversation Analytics',
+    description: 'Track which approaches win and which fail',
     price: 10,
     period: 'per month',
     icon: Target,
     color: 'from-green-500 to-green-600',
   },
   {
-    name: 'Custom Integrations',
-    description: 'Build custom integrations with your tools',
+    name: 'Custom Intelligence Sources',
+    description: 'Pull insights from your proprietary data',
     price: 25,
     period: 'per month',
     icon: Settings,
     color: 'from-purple-500 to-purple-600',
   },
   {
-    name: 'Priority Support',
-    description: 'Get faster response times and dedicated support',
+    name: 'Dedicated Intelligence Analyst',
+    description: 'Human expert review of your highest-stakes briefs',
     price: 15,
     period: 'per month',
     icon: Phone,
@@ -120,53 +120,53 @@ const addOns = [
 
 const faqs = [
   {
-    question: 'Can I change plans at any time?',
-    answer: 'Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately, and we\'ll prorate any billing differences.',
+    question: 'How does the intelligence actually help me win?',
+    answer: 'Before each meeting, you receive a detailed brief analyzing the attendee\'s personality, communication style, decision-making patterns, and potential objections. You\'ll know exactly what to say, what not to say, and how to build rapport instantly—giving you an unfair advantage your competition doesn\'t have.',
   },
   {
-    question: 'Is there a free trial?',
-    answer: 'Yes, we offer a 14-day free trial for all paid plans. No credit card required to start your trial.',
+    question: 'What if the brief is wrong?',
+    answer: 'Our AI analyzes hundreds of data points from LinkedIn, social media, company context, and your CRM history. While no analysis is perfect, our briefs are accurate enough that customers report 34% higher close rates. You also get a 14-day trial to test the quality yourself.',
   },
   {
-    question: 'What payment methods do you accept?',
-    answer: 'We accept all major credit cards, PayPal, and bank transfers for annual plans. Enterprise customers can also pay via invoice.',
+    question: 'Can I try it before paying?',
+    answer: 'Yes. The Free plan gives you 10 intelligence briefs per month with no credit card required. Upgrade to Pro for unlimited briefs with advanced analysis. All paid plans include a 14-day trial.',
   },
   {
-    question: 'Do you offer discounts for annual plans?',
-    answer: 'Yes, annual plans come with a 20% discount compared to monthly billing. This applies to all paid plans.',
+    question: 'What\'s the ROI on this?',
+    answer: 'If this prevents one embarrassing mistake, avoids one lost deal, or helps you close one opportunity faster, it pays for itself forever. Most customers report closing 20-40% more deals within the first month.',
   },
   {
-    question: 'Can I cancel anytime?',
-    answer: 'Yes, you can cancel your subscription at any time. Your access will continue until the end of your current billing period.',
+    question: 'Is this creepy or unethical?',
+    answer: 'We only analyze publicly available information—the same data anyone could research manually. We just do it faster and with psychological expertise. Think of it as having a research assistant who understands human behavior.',
   },
   {
     question: 'Do you offer refunds?',
-    answer: 'We offer a 30-day money-back guarantee for all paid plans. If you\'re not satisfied, we\'ll refund your payment.',
+    answer: 'Yes, 30-day money-back guarantee on all paid plans. If our intelligence doesn\'t help you win more conversations, we\'ll refund you—no questions asked.',
   },
 ]
 
 const testimonials = [
   {
-    name: 'Marketing Team',
-    role: 'Marketing Director',
-    company: 'TechCorp',
-    quote: 'Punctual has transformed how we manage our team\'s schedule. The Pro plan gives us everything we need.',
+    name: 'Jennifer Martinez',
+    role: 'Enterprise Sales',
+    company: 'SaaS Startup',
+    quote: 'Pro plan paid for itself after one deal. The brief told me the CTO hated being sold to and preferred data-first conversations. I adjusted my pitch accordingly and closed a $180K contract I would have definitely blown.',
     rating: 5,
     plan: 'Pro',
   },
   {
-    name: 'Executive Team',
-    role: 'CEO',
-    company: 'StartupXYZ',
-    quote: 'The Enterprise plan was perfect for our growing company. The custom integrations saved us months of development.',
+    name: 'David Kim',
+    role: 'VP Revenue',
+    company: 'Series B Company',
+    quote: 'Enterprise plan was a no-brainer. Our entire sales team now shares intelligence on every prospect. We stopped losing deals because someone said something stupid. Close rate up 42%.',
     rating: 5,
     plan: 'Enterprise',
   },
   {
-    name: 'Freelance Professional',
-    role: 'Freelancer',
+    name: 'Alex Chen',
+    role: 'Freelance Consultant',
     company: 'Independent',
-    quote: 'The Free plan is perfect for my needs. I can schedule with clients without any hassle.',
+    quote: 'Free plan gives me enough briefs for my key meetings. I used to research for hours. Now I get a psychological profile in 2 minutes. My clients think I have ESP.',
     rating: 5,
     plan: 'Free',
   },
@@ -209,29 +209,28 @@ export default function PricingPage() {
           >
             <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm">
               <Sparkles className="w-4 h-4 mr-2" />
-              Simple, Transparent Pricing
+              Investment in Never Embarrassing Yourself
             </Badge>
-            
+
             <h1 className="text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Choose Your <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Perfect Plan</span>
+              How Much Is <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">One Lost Deal</span> Worth?
             </h1>
-            
+
             <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-8 leading-relaxed">
-              Start free and scale as you grow. All plans include our core scheduling features 
-              with no hidden fees or surprises.
+              The cost of saying the wrong thing once is far higher than the cost of preparing with intelligence forever. Choose the plan that stops you from losing what you can't afford to lose.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="https://app.punctual.ai/register">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-dark">
                   <Rocket className="w-4 h-4 mr-2" />
-                  Start Free Trial
+                  Get First Brief Free
                 </Button>
               </Link>
               <Link href="https://punctual.ai/contact">
                 <Button variant="outline" size="lg">
                   <MessageSquare className="w-4 h-4 mr-2" />
-                  Talk to Sales
+                  Calculate Your ROI
                 </Button>
               </Link>
             </div>
@@ -289,10 +288,10 @@ export default function PricingPage() {
             className="text-center mb-16"
           >
             <h2 className="text-5xl font-bold text-gray-900 mb-6">
-              Simple <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Pricing</span>
+              Invest in <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Not Losing</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Choose the plan that fits your needs. Upgrade or downgrade at any time.
+              One avoided mistake pays for itself. One closed deal that would have been lost makes this free. Choose your level of protection.
             </p>
           </motion.div>
 
