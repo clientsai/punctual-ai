@@ -172,16 +172,29 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Social Proof Bar */}
-      <section className="py-12 bg-gray-50 border-y border-gray-200">
+      {/* Intelligence Promise Bar */}
+      <section className="py-12 bg-gradient-to-r from-gray-900 to-gray-800 border-y border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
-            <p className="text-sm font-medium text-gray-500 uppercase tracking-wider">Trusted by teams at</p>
-            {['Google', 'Microsoft', 'Amazon', 'Meta', 'Apple'].map((company) => (
-              <div key={company} className="text-2xl font-bold text-gray-400">
-                {company}
-              </div>
-            ))}
+          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-12 text-center">
+            <div className="flex flex-col">
+              <span className="text-3xl font-bold text-white">94%</span>
+              <span className="text-sm text-gray-400 mt-1">Better first impressions</span>
+            </div>
+            <div className="h-12 w-px bg-gray-700 hidden md:block" />
+            <div className="flex flex-col">
+              <span className="text-3xl font-bold text-white">34%</span>
+              <span className="text-sm text-gray-400 mt-1">Higher close rates</span>
+            </div>
+            <div className="h-12 w-px bg-gray-700 hidden md:block" />
+            <div className="flex flex-col">
+              <span className="text-3xl font-bold text-white">Zero</span>
+              <span className="text-sm text-gray-400 mt-1">Embarrassing mistakes</span>
+            </div>
+            <div className="h-12 w-px bg-gray-700 hidden md:block" />
+            <div className="flex flex-col">
+              <span className="text-3xl font-bold text-white">2 min</span>
+              <span className="text-sm text-gray-400 mt-1">To first intelligence brief</span>
+            </div>
           </div>
         </div>
       </section>

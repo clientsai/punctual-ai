@@ -10,75 +10,75 @@ import { Button } from '@/components/ui/button'
 
 const salesFeatures = [
   {
-    title: 'Automated Lead Scheduling',
-    description: 'Never miss a sales opportunity with intelligent lead scheduling that works 24/7.',
-    icon: Calendar,
-    benefits: [
-      'Instant booking for qualified leads',
-      'Automatic follow-up scheduling',
-      'CRM integration for seamless workflow',
-      'Time zone optimization for global teams'
-    ]
-  },
-  {
-    title: 'Pipeline Management',
-    description: 'Track and manage your entire sales pipeline with built-in scheduling intelligence.',
-    icon: BarChart3,
-    benefits: [
-      'Visual pipeline tracking',
-      'Automated stage progression',
-      'Performance analytics',
-      'Team collaboration tools'
-    ]
-  },
-  {
-    title: 'Meeting Intelligence',
-    description: 'AI-powered insights to optimize your sales meetings and improve conversion rates.',
+    title: 'Buyer Psychology Profiling',
+    description: 'Understand exactly who you\'re selling to before the pitch starts.',
     icon: Brain,
     benefits: [
-      'Meeting success predictions',
-      'Optimal timing recommendations',
-      'Follow-up automation',
-      'Performance insights'
+      'Personality type and communication style analysis',
+      'Decision-making pattern mapping',
+      'Budget authority and influence identification',
+      'Pain point and motivation discovery'
     ]
   },
   {
-    title: 'Team Coordination',
-    description: 'Seamlessly coordinate with your sales team and support staff for complex deals.',
+    title: 'Objection Prediction Engine',
+    description: 'Know what they\'ll say no to—and how to handle it—before they say it.',
+    icon: Shield,
+    benefits: [
+      'Likely objections based on role and industry',
+      'Proven objection handling scripts',
+      'Competitive comparison intelligence',
+      'Deal-killing phrase alerts'
+    ]
+  },
+  {
+    title: 'What NOT to Say Alerts',
+    description: 'Prevent the mistakes that lose deals in the first 5 minutes.',
+    icon: AlertCircle,
+    benefits: [
+      'Red flag topics to avoid',
+      'Communication styles that backfire',
+      'Cultural and industry sensitivities',
+      'Past failed approaches with similar buyers'
+    ]
+  },
+  {
+    title: 'Team Intelligence Sharing',
+    description: 'When one rep learns what works, the whole team wins.',
     icon: Users,
     benefits: [
-      'Multi-person meeting scheduling',
-      'Resource availability tracking',
-      'Conflict resolution',
-      'Team performance metrics'
+      'Centralized buyer intelligence database',
+      'Winning approaches for each account',
+      'Team conversation playbooks',
+      'Mistake prevention system'
     ]
   }
 ]
 
 const salesStats = [
-  { metric: '40%', label: 'Increase in qualified meetings' },
-  { metric: '65%', label: 'Reduction in scheduling time' },
-  { metric: '30%', label: 'Improvement in conversion rates' },
-  { metric: '85%', label: 'Customer satisfaction score' }
+  { metric: '34%', label: 'Higher close rates' },
+  { metric: '94%', label: 'Better first impressions' },
+  { metric: 'Zero', label: 'Embarrassing mistakes' },
+  { metric: '$180K', label: 'Avg deal saved in first month' }
 ]
 
 const testimonials = [
   {
-    quote: 'Punctual transformed our sales process. We\'re booking 40% more qualified meetings with half the effort.',
-    author: 'Sales Director',
-    company: 'TechCorp',
+    quote: 'The brief told me the CFO hated being sold to and only responded to ROI data. I completely changed my approach and closed a $450K deal I would have lost in the first 10 minutes.',
+    author: 'Jennifer Martinez',
+    company: 'Enterprise SaaS',
     industry: 'Technology'
   },
   {
-    quote: 'The automated scheduling features saved our team 10+ hours per week. Game changer for our sales team.',
-    author: 'VP of Sales',
-    company: 'GrowthCo',
-    industry: 'SaaS'
+    quote: 'Our team stopped guessing what buyers wanted to hear. The objection prediction feature alone increased our close rate by 28%. Every rep now walks in prepared.',
+    author: 'Marcus Thompson',
+    company: 'B2B SaaS',
+    industry: 'Software'
   },
   {
-    quote: 'Finally, a tool that understands the complexity of enterprise sales. Our close rates improved dramatically.',
-    author: 'Enterprise Sales Manager',
-    company: 'Enterprise Solutions',
+    quote: 'We were losing enterprise deals because junior reps didn\'t know what NOT to say. The intelligence sharing means everyone learns from our best performers. Game over for the competition.',
+    author: 'Rachel Kim',
+    company: 'Cloud Infrastructure',
     industry: 'Enterprise Software'
   }
 ]
@@ -152,29 +152,28 @@ export default function SalesSolutionPage() {
           >
             <Badge variant="secondary" className="mb-6 px-4 py-2 text-sm">
               <Target className="w-4 h-4 mr-2" />
-              Sales Solution
+              Sales Intelligence
             </Badge>
-            
+
             <h1 className="text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Accelerate Your <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Sales Pipeline</span>
+              Close Deals by <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Understanding Buyers</span>
             </h1>
-            
+
             <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-8 leading-relaxed">
-              Transform your sales process with intelligent scheduling that books more qualified meetings, 
-              reduces administrative overhead, and drives higher conversion rates.
+              Stop losing deals because someone said the wrong thing. Walk into every sales call knowing the buyer\'s personality, decision-making process, objections, and exactly what phrases kill deals before they start.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="https://app.punctual.ai/register">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary-dark hover:to-accent-dark">
                   <Rocket className="w-5 h-5 mr-2" />
-                  Start Free Trial
+                  Start Winning More
                 </Button>
               </Link>
               <Link href="https://app.punctual.ai/demo">
                 <Button variant="outline" size="lg">
                   <MessageSquare className="w-5 h-5 mr-2" />
-                  Watch Demo
+                  See Sample Brief
                 </Button>
               </Link>
             </div>
