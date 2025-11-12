@@ -109,22 +109,44 @@ export function Footer() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center space-x-4 mb-4 md:mb-0">
-            <p className="text-gray-400 text-sm">
-              © {currentYear} Punctual.AI. All rights reserved.
-            </p>
-          </div>
-          <div className="flex space-x-6">
-            <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
-              Privacy
-            </Link>
-            <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">
-              Terms
-            </Link>
-            <Link href="/security" className="text-gray-400 hover:text-white text-sm transition-colors">
-              Security
-            </Link>
+        <div className="border-t border-gray-800 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="flex items-center space-x-4">
+              <p className="text-gray-400 text-sm">
+                © {currentYear} Punctual.AI. All rights reserved.
+              </p>
+            </div>
+
+            <div className="flex items-center space-x-6">
+              <div className="flex space-x-6">
+                <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
+                  Privacy
+                </Link>
+                <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">
+                  Terms
+                </Link>
+                <Link href="/security" className="text-gray-400 hover:text-white text-sm transition-colors">
+                  Security
+                </Link>
+              </div>
+
+              {/* Powered by Clients.ai */}
+              <div className="border-l border-gray-700 pl-6">
+                <a
+                  href="https://clients.ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center gap-1 hover:opacity-70 transition-opacity duration-300 cursor-pointer group"
+                >
+                  <span className="text-xs font-light text-gray-400 tracking-tight">Powered by</span>
+                  <img
+                    src="/clients-ai-logo.png"
+                    alt="Clients.ai"
+                    className="h-4 object-contain transition-transform duration-300 group-hover:scale-105"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
