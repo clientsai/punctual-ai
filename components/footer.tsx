@@ -140,7 +140,7 @@ export function Footer() {
                 >
                   <span className="text-xs font-light text-gray-400 tracking-tight">Powered by</span>
                   <img
-                    src="/clients-ai-logo.png"
+                    src="/clients-ai-logo-white.png"
                     alt="Clients.ai"
                     className="h-4 object-contain transition-transform duration-300 group-hover:scale-105"
                   />

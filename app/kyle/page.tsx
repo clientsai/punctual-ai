@@ -93,11 +93,6 @@ export default function KyleBookingPage() {
 
               {/* Divider - the smallest details matter most */}
               <div className="w-20 h-[0.5px] bg-gradient-to-r from-transparent via-gray-200/60 to-transparent mx-auto" />
-
-              {/* Invitation - warmth through simplicity */}
-              <p className="text-xl sm:text-2xl font-light text-gray-600/90 max-w-2xl mx-auto leading-relaxed tracking-[-0.01em] px-6">
-                Let&apos;s connect and explore what we can build together.
-              </p>
             </div>
           </div>
         </div>
